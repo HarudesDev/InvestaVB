@@ -6,16 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Investa VB</title>
         <!-- JavaScript Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-        <script src="http://test.gestiona2.com/maquetas_avance/maquetas/public/js/libs/wrunner-jquery.js"></script>
+        <script src="{{asset('js/libs/wrunner-jquery.js')}}"></script>
+        <script src="{{asset('js/app.js')}}"></script>
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="http://test.gestiona2.com/maquetas_avance/maquetas/public/css/investa-app.css">
-        <link rel="stylesheet" href="http://test.gestiona2.com/maquetas_avance/maquetas/public/css/wrunner-default-theme.css">
+        <link rel="stylesheet" href="{{asset('css/investa-app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/wrunner-default-theme.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <style>
             #page-footer{
                 position:absolute;
@@ -32,12 +32,36 @@
             }
 
             #content-wrap {
-            padding-bottom: 15rem;
+                padding-bottom: 15rem;
             }
 
             #content{
                 padding-left: 10vh;
                 padding-right: 10vh;
+            }
+
+            .btn-primary{
+                background-color: #31388E;
+                border-color: #31388E
+            }
+
+            .btn-outline-primary{
+                border-color: #31388E;
+                color: #31388E;
+            }
+
+            .btn-primary:hover{
+                background-color: #20277D;
+                border-color: #20277D
+            }
+
+            .btn-outline-primary:hover{
+                border-color: #20277D;
+                background-color: #20277D;
+            }
+
+            .title-image{
+                border-radius: 213.531px 0px 218.785px 216px;
             }
         </style>
         @yield('css')
@@ -53,8 +77,8 @@
                 <nav class="navbar navbar-expand-lg p-0 m-3">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <a class="navbar-brand" href="http://test.gestiona2.com/maquetas_avance/maquetas/public/peruvian">
-                                <img src="http://test.gestiona2.com/maquetas_avance/maquetas/public/images/investa/logo.png" alt="Investavb" style="max-width:150px;">
+                            <a class="navbar-brand" href="#">
+                                <img src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:150px;">
                             </a>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
@@ -103,7 +127,7 @@
         <footer id="page-footer" class="p-5 bg-blue1 text-white">
             <div class="row justify-content-center g-5">
                 <div class="col-12 col-lg-3 mb-4" style="text-align-last: center;">
-                    <img src="/images/logo blanco.png" style="width:213px; height:102px;">
+                    <img src="{{asset('images/logo blanco.png')}}" style="width:213px; height:102px;">
                     <p class="text-center">Transfórmate y Escala</p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-2 mb-4">
@@ -149,5 +173,6 @@
             </div>
         </footer>
     </div>
+    @yield('scripts')
 </body>
 </html>
