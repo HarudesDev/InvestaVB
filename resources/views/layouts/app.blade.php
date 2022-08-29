@@ -7,12 +7,10 @@
         <title>Investa VB</title>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
         <script src="{{asset('js/libs/wrunner-jquery.js')}}"></script>
         <script src="{{asset('js/app.js')}}"></script>
         <!-- CSS only -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
         <link rel="stylesheet" href="{{asset('css/investa-app.css')}}">
         <link rel="stylesheet" href="{{asset('css/wrunner-default-theme.css')}}">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -48,11 +46,13 @@
             .btn-outline-primary{
                 border-color: #31388E;
                 color: #31388E;
+                border-radius: 20px;
+                border-width: 2px;
             }
 
             .btn-primary:hover{
                 background-color: #20277D;
-                border-color: #20277D
+                border-color: #20277D;
             }
 
             .btn-outline-primary:hover{
@@ -62,6 +62,14 @@
 
             .title-image{
                 border-radius: 213.531px 0px 218.785px 216px;
+            }
+
+            .link-dark{
+                color:#212529!important;
+            }
+
+            .link-dark:focus,.link-dark:hover{
+                color:#1a1e21!important
             }
         </style>
         @yield('css')
@@ -114,7 +122,7 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary rounded-4 w-100">Ingresar</button>
+                        <button type="button" class="btn btn-outline-primary w-100" style="height: 3.5vh;">Ingresar</button>
                     </div>
                 </div>
             </div>

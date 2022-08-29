@@ -48,7 +48,7 @@
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.75vh;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis mollis sem, a cursus ipsum scelerisque eu. Quisque blandit sit amet ipsum in consequat. Phasellus auctor, lacus sed vulputate pellentesque, lorem lectus consequat elit, nec vestibulum odio ante non ante. Sed id lectus eros. Sed sollicitudin dictum neque id dignissim.
             </p>
-            <button type="button" class="btn btn-primary rounded-5" style="height: 5vh; padding-left: 2vh; padding-right: 2vh; font-size: 1.5vh;">Quiero empezar</button>
+            <button type="button" class="btn btn-primary" style="height: 5vh; padding-left: 2vh; padding-right: 2vh; font-size: 1.5vh; border-radius: 25px">Quiero empezar</button>
         </div>
         <div class="col">
             <img src="{{asset('images/Startups Image.png')}}" 
@@ -188,7 +188,7 @@
                         </p>
                         <br>
                         <br>
-                        <button type="button" class="btn btn-outline-primary rounded-4" style="height:4vh; width:10vh;">Leer más</button>
+                        <button type="button" class="btn btn-outline-primary" style="height:4vh; width:10vh;">Leer más</button>
                     </div>
                 </div>
             </div>
@@ -202,7 +202,7 @@
                         </p>
                         <br>
                         <br>
-                        <button type="button" class="btn btn-outline-primary rounded-4" style="height:4vh; width:10vh;">Leer más</button>
+                        <button type="button" class="btn btn-outline-primary" style="height:4vh; width:10vh;">Leer más</button>
                     </div>
                 </div>
             </div>
@@ -216,7 +216,7 @@
                         </p>
                         <br>
                         <br>
-                        <button type="button" class="btn btn-outline-primary rounded-4" style="height:4vh; width:10vh;">Leer más</button>
+                        <button type="button" class="btn btn-outline-primary" style="height:4vh; width:10vh;">Leer más</button>
                     </div>
                 </div>
             </div>

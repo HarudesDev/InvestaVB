@@ -9,7 +9,7 @@
                 </div>
             </div>
             <div class="col-2">
-                <button class="btn btn-primary mb-2 col-auto rounded-5" style="height: 5vh; width: 12vh; background-color: #010133; border-color: #010133;"> Suscribirme </button>
+                <button class="btn btn-primary mb-2 col-auto" style="height: 5vh; width: 12vh; background-color: #010133; border-color: #010133; border-radius: 20px;"> Suscribirme </button>
             </div>
         </div>
     </form>

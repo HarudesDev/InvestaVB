@@ -53,6 +53,10 @@
             opacity:.5;
         }
 
+        .carousel-item{
+            height: 28vh;
+        }
+
 
     </style>
 @section('content')
@@ -76,7 +80,7 @@
     </div>
 
     <h2><b>Nuestros Aliados</b></h2>
-    <p class="text-center" style="font-size: 2vh;">Redes de Inversionistas, Aceleradoras y Concursos Mundiales</p>
+    <p class="text-center" style="font-size: 2vh;"><b>Redes de Inversionistas, Aceleradoras y Concursos Mundiales</b></p>
     <br>
     <br>
     <!-- Carrusel -->
@@ -89,13 +93,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="{{asset('images/Imagen empresa.png')}}" alt="First slide">
+                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="{{asset('images/Imagen empresa.png')}}" alt="Second slide">
+                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="{{asset('images/Imagen empresa.png')}}" alt="Third slide">
+                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -117,7 +121,7 @@
     <script>
         $('.carousel').carousel({
             pause: "hover",
-            interval: 2000
+            interval: 3000
         });
     </script>
 @endsection
