@@ -71,6 +71,10 @@
             .link-dark:focus,.link-dark:hover{
                 color:#1a1e21!important
             }
+
+            .ms-3{
+                margin-left:1rem!important
+            }
         </style>
         @yield('css')
     </head>
@@ -100,7 +104,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="#">Academia</a>
+                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
                                 </li>
                                 <li class="nav-item d-table">
                                     <a class="nav-link d-table-cell align-middle link-dark" href="#">Eventos</a>
