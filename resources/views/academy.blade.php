@@ -17,7 +17,7 @@
 @endsection
 
 @section('content')
-<div>
+<div id="content">
     <div class="row">
         <div class="col-6">
             <h1 style="font-size: 5vh; padding-top: 5vh;">Academia: blog</h1>
@@ -85,5 +85,10 @@
     </div>
     <br>
     <p style="text-align: right; font-size: 2.5vh;">Ver más...</p>
+</div>
+<!-- News Subscription -->
+<div style="background: rgba(0, 0, 51, 0.04);">
+    @component('components.subscribe')
+    @endcomponent
 </div>
 @endsection

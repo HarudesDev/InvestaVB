@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
+<div id="content">
     <div class="row">
         <div class="col-6">
             <h1 style="font-size: 5vh; padding-top: 5vh;">Eventos</h1>
@@ -19,8 +19,9 @@
             <img class="title-image" id="events-img" src="{{asset('images/Events.jpg')}}" style="max-width:100%;">
         </div>
     </div>
+    <br><br>
     <!-- Event List -->
-    <div style="padding-left: 20vw; padding-right: 20vw;">
+    <div style="padding-left: 25vw; padding-right: 25vw; padding-bottom: 5vh;">
         <div class="row" style="font-size: 2vh;">
             <div class="col">
                 <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
@@ -40,52 +41,54 @@
         <br>
         <br>
         <div class="row">
-            <div class="col-1">
-                Nov
+            <div class="col-1" style="font-size: 1.5vh;">
+                NOV
                 <br>
-                <b>23</b>
+                <b style="font-size: 2vh;">23</b>
                 <br>
                 2020
             </div>
-            <div class="col-11">
+            <div class="col-11" style="font-size: 1.5vh;">
                 23 noviembre, 2020 - 24 noviembre, 2020
-                <br>
-                <b>FINOVATE West 2020 (paid)</b>
+                <br><br>
+                <b style="font-size: 2vh;">FINOVATE West 2020 (paid)</b>
             </div>
         </div>
-        <br>
+        <br><br>
         <div class="row">
-            <div class="col-1">
-                Nov
+            <div class="col-1" style="font-size: 1.5vh;">
+                NOV
                 <br>
-                <b>16</b>
+                <b style="font-size: 2vh;">16</b>
                 <br>
                 2020
             </div>
-            <div class="col-11">
+            <div class="col-11" style="font-size: 1.5vh;">
                 16 noviembre, 2020 - 18 noviembre, 2020
-                <br>
-                <b>CB Insights - Future of Fintech</b>
+                <br><br>
+                <b style="font-size: 2vh;">CB Insights - Future of Fintech</b>
             </div>
         </div>
-        <br>
+        <br><br>
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" style="font-size: 1.5vh;">
                 OCT
                 <br>
-                <b>27</b>
+                <b style="font-size: 2vh;">27</b>
                 <br>
                 2020
             </div>
-            <div class="col-11">
+            <div class="col-11" style="font-size: 1.5vh;">
                 27 octubre, 2020 @ 11:00 - 13:00 UTC-5
-                <br>
-                <b>Thousand Eyes on Me - The Leadership Gap & Përsonal Branding</b>
+                <br><br>
+                <b style="font-size: 2vh;">Thousand Eyes on Me - The Leadership Gap & Përsonal Branding</b>
             </div>
         </div>
         <br>
     </div>
-    <!-- News Subscription -->
+</div>
+<!-- News Subscription -->
+<div style="background: rgba(0, 0, 51, 0.04);">
     @component('components.subscribe')
     @endcomponent
 </div>

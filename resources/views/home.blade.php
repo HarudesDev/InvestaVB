@@ -41,7 +41,7 @@
 @endsection
 
 @section('content')
-<div>
+<div id="content">
     <div class="row">
         <div class="col">
             <h1 style="font-size: 7.5vh;">Somos el puente entre startups y empresas innovadoras</h1>
@@ -90,7 +90,7 @@
         </li>
         <li class="nav-item" style="text-align: -webkit-center;">
             <a class="nav-link" id="consultory-tab" data-toggle="tab" href="#consultory" role="tab" aria-controls="consultory" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 4vh; padding-right: 4vh;">
-                <img src="{{asset('images/Knowledge and academy icon.png')}}" src="/images/Consultory icon.png" style="height: 10vh;">
+                <img src="{{asset('images/Consultory icon.png')}}" style="height: 10vh;">
                 <br>
                 <h4>Consultoria</h4>
             </a>
@@ -223,7 +223,7 @@
         </div>
     </div>
     <!-- Specialists -->
-    <div style="padding-top: 5vh;">
+    <div style="padding-top: 5vh; padding-bottom: 5vh;">
         <p style="opacity: 0.3; font-size: 2.5vh;"><b>¿Cómo lo hacemos?</b></p>
         <h2 style="font-size: 4vh;">Nuestros especialistas a tu lado</h2>
         <div style="width: 25%; background-color: #31388E; height: 1vh;"></div>
@@ -292,7 +292,9 @@
             <div class="col"></div>
         </div>
     </div>
-    <!-- News Subscription -->
+</div>
+<!-- News Subscription -->
+<div style="background: rgba(0, 0, 51, 0.04);">
     @component('components.subscribe')
     @endcomponent
 </div>

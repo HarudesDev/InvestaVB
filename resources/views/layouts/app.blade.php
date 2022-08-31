@@ -36,6 +36,7 @@
             #content{
                 padding-left: 10vh;
                 padding-right: 10vh;
+                padding-top: 3vh;
             }
 
             .btn-primary{
@@ -89,7 +90,7 @@
                 <nav class="navbar navbar-expand-lg p-0 m-3">
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="{{route('home')}}">
                                 <img src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:150px;">
                             </a>
                         </div>
@@ -107,10 +108,10 @@
                                     <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
                                 </li>
                                 <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="#">Eventos</a>
+                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('events')}}">Eventos</a>
                                 </li>
                                 <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="#">Contacto</a>
+                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">Contacto</a>
                                 </li>
                             </ul>
                         </div>
@@ -131,7 +132,7 @@
                 </div>
             </div>
 
-            <main id="content" class="py-4" style="max-width: 190vh;">
+            <main style="max-width: 100vw;">
                 @yield('content')
             </main>
         </div>
@@ -153,7 +154,7 @@
             <div class="col-12 col-sm-6 col-lg-2 mb-4">
                     <ul class="nav flex-column gs-sm-5">
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">SERVICIOS</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('events')}}" class="nav-link p-0 text-white">CALENDARIO DE EVENTOS</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('calendar')}}" class="nav-link p-0 text-white">CALENDARIO DE EVENTOS</a></li>
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">PROYECTOS</a></li>            </ul>
             </div>
 

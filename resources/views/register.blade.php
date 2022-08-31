@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
+<div id="content">
     <h1>Registro: USUARIO</h1>
 </div>
 @endsection
