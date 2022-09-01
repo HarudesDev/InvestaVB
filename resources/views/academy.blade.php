@@ -32,7 +32,9 @@
             </p>
         </div>
         <div class="col-6" style="padding-left: 10%;">
-            <img class="title-image" id="events-img" src="{{asset('images/academy-logo.jpg')}}" style="max-width:100%;">
+            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
+                <img class="title-image" id="events-img" src="{{asset('images/academy-logo.jpg')}}" style="max-width:100%;">
+            </div>
         </div>
     </div>
     <!-- Academy Cards-->
@@ -84,7 +86,7 @@
         </div>
     </div>
     <br>
-    <p style="text-align: right; font-size: 2.5vh;">Ver más...</p>
+    <p style="text-align: right; font-size: 2.5vh;"><a href="{{route('blog')}}" style="color:black">Ver más...</a></p>
 </div>
 <!-- News Subscription -->
 <div style="background: rgba(0, 0, 51, 0.04);">

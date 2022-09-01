@@ -1,9 +1,5 @@
 @extends('layouts.app')
     <style>
-        #enterprise-img{
-            border-radius: 213.531px 0px 218.785px 216px;
-            filter: drop-shadow(0px 11.1346px 18.5576px rgba(2, 147, 52, 0.05));
-        }
 
         section.awSlider .carousel{
             display:table;
@@ -63,7 +59,7 @@
 <div class="page-content" id="content">
     <div class="row">
         <div class="col-6">
-            <h1 style="font-size: 5vh; padding-top: 5vh;">¿Quienes somos?</h1>
+            <h1 style="font-size: 5vh; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.75vh;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
             </p>
@@ -75,7 +71,9 @@
             </p>
         </div>
         <div class="col-6" style="padding-left: 10%;">
-            <img class="title-image" id="enterprise-img" src="{{asset('images/Imagen empresa.png')}}" style="max-width:100%;">
+            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
+                <img class="title-image" id="enterprise-img" src="{{asset('images/Imagen empresa.png')}}" style="max-width:100%;">
+            </div>
         </div>
     </div>
 

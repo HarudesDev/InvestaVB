@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::view('/', 'marketplace')->name('marketplace');
+Route::view('/marketplace', 'marketplace')->name('marketplace');
 Route::view('/inicio', 'home')->name('home');
 Route::view('/nosotros', 'about')->name('aboutUs');
 Route::view('/eventos', 'events')->name('events');
@@ -23,3 +23,4 @@ Route::view('/academia', 'academy')->name('academy');
 Route::view('/contacto', 'contact')->name('contact');
 Route::view('/calendario', 'calendar')->name('calendar');
 Route::view('/blog', 'blog')->name('blog');
+Route::view('/registro', 'register')->name('register');

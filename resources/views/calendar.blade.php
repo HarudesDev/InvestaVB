@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div>
+<div id="content">
     <h1>Calendario</h1>
 </div>
 @endsection

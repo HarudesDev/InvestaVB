@@ -14,13 +14,19 @@
         <link rel="stylesheet" href="{{asset('css/investa-app.css')}}">
         <link rel="stylesheet" href="{{asset('css/wrunner-default-theme.css')}}">
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
+            body {
+                font-family: 'Ubuntu', sans-serif;
+            }
             #page-footer{
                 position:absolute;
                 left:0;
                 bottom:0;
                 width:100%;
-                height:15rem;
+                font-size: 1rem;
             }
 
             #page-container {
@@ -76,13 +82,25 @@
             .ms-3{
                 margin-left:1rem!important
             }
+
+            .link-light{
+                color:#f8f9fa!important
+            }
+
+            .link-light:focus,.link-light:hover{
+                color:#f9fafb!important
+            }
+
+            .ms-3{
+                margin-left: 1rem!important
+            }
         </style>
         @yield('css')
     </head>
 <body>
     <div id="page-container" class="container-fluid p-0">
         <div id="content-wrap">
-            <div id="mainNavigator" class="m-0 d-flex justify-content-between bg-grey1">
+            <div id="mainNavigator" class="m-0 d-flex justify-content-between bg-grey1" style="font-size: 1.25rem;">
                 <div class="m-3">
                     <p class="m-0"><small>¿Necesitas ayuda?</small></p>
                     <p class="m-0"><small><strong>info@investavb.com</strong></small></p><p>
@@ -91,13 +109,13 @@
                     <div class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <a class="navbar-brand" href="{{route('home')}}">
-                                <img src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:150px;">
+                                <img src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:15rem;">
                             </a>
                         </div>
                         <div class="col-12 d-flex justify-content-center">
                             <ul class="nav justify-content-end">   
                                 <li class="nav-item dropdown d-table">
-                                    <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="{{route('marketplace')}}" role="button" aria-expanded="false">
                                         Market Place
                                     </a>
                                     <ul class="dropdown-menu">
@@ -121,13 +139,13 @@
                 <div class="m-3">
                     <div class="d-flex justify-content-center">
                         <ul class="list-unstyled d-flex">
+                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>   
                             <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>     
+                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>  
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary w-100" style="height: 3.5vh;">Ingresar</button>
+                        <button type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;">Ingresar</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +158,7 @@
         <footer id="page-footer" class="p-5 bg-blue1 text-white">
             <div class="row justify-content-center g-5">
                 <div class="col-12 col-lg-3 mb-4" style="text-align-last: center;">
-                    <img src="{{asset('images/logo blanco.png')}}" style="width:213px; height:102px;">
+                    <img src="{{asset('images/logo blanco.png')}}" style="width:213px; height:102px;" alt="Investavb">
                     <p class="text-center">Transfórmate y Escala</p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-2 mb-4">
