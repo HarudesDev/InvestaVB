@@ -18,6 +18,49 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
         <style>
+            @media (min-width: 576px) {
+                #content{
+                    padding-left: 10vh;
+                    padding-right: 10vh;
+                    padding-top: 3vh;
+                }
+
+                #subscribe-banner{
+                    padding: 10vh;
+                    padding-right: 40vh;
+                    padding-left: 40vh;
+                }
+
+                #subscribe-banner-button{
+                    height: 4rem;
+                    min-width: 9.75rem;
+                    background-color: #010133;
+                    border-color: #010133;
+                    border-radius: 20px;
+                    font-size: 1.25rem;
+                }
+            }
+            @media (max-width: 575px) {
+                #content{
+                    padding-left: 5vw;
+                    padding-right: 5vw;
+                    padding-top: 3vh;
+                }
+
+                #subscribe-banner{
+                    padding-bottom: 40rem;
+                }
+
+                #subscribe-banner-button{
+                    height: 4rem;
+                    width: 93%;
+                    margin-left:3.5%;
+                    background-color: #010133;
+                    border-color: #010133;
+                    border-radius: 20px;
+                    font-size: 1.25rem;
+                }
+            }
             body {
                 font-family: 'Ubuntu', sans-serif;
             }
@@ -39,11 +82,6 @@
                 padding-bottom: 15rem;
             }
 
-            #content{
-                padding-left: 10vh;
-                padding-right: 10vh;
-                padding-top: 3vh;
-            }
 
             .btn-primary{
                 background-color: #31388E;

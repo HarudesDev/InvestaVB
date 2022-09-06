@@ -2,42 +2,63 @@
 
 @section('css')
     <style>
+        @media (min-width: 576px) {
+            #events-container{
+                padding-left: 15vw;
+                padding-right: 15vw;
+                padding-top: 3vh;
+            }
+        }
+
+        @media (max-width: 575px) {
+            #events-container{
+                padding-top: 3vh;
+                padding-bottom: 70vh;
+            }
+        }
+
         .card-wrapper{
             padding-bottom: 1.5vh;
         }
+
         .card-header-text{
-            font-size: 3vh;
+            font-size: 2.4rem;
             padding-left: 0.5vw;
             padding-right: 0.5vw;
             padding-bottom: 2vh;
         }
+
         .card-date-text{
-            font-size: 1.5vh;
+            font-size: 1.25rem;
             color: #37519a;
             padding-left: 0.5vw;
             padding-right: 0.5vw;
             padding-bottom: 2vh;
         }
+
         .card-content-text{
             padding-left: 0.5vw;
             padding-right: 0.5vw;
             padding-bottom: 2vh;
-            font-size: 1.5vh;
+            
+            font-size: 1.25rem;
         }
         .blog-card{
             background-color: #edeef0;
             padding-bottom: 1vh;
         }
+
         .card-button{
             width: 100%;
-            font-size: 1.25vh;
-            height: 3vh;
+            font-size: 1rem;
+            height: 2.4rem;
             border-radius: 5px;
         }
+        
         .filter-button{
             margin-left: 0.25vw;
             margin-right: 0.25vw;
-            font-size: 1.25vh;
+            font-size: 1rem;
         }
 
     </style>
@@ -55,8 +76,8 @@
             <a class="btn btn-primary filter-button"> STARTUPS </a>
         </span>
     </div>
-    <div class="row" style="padding-left: 15vw; padding-right: 15vw; padding-top: 3vh;">
-        <div class="col-4">
+    <div id="events-container" class="row">
+        <div class="col-md-4 col-sm-12">
             <div class="card-wrapper">
                 <div class="card blog-card">
                     <div class="card-body">
@@ -94,7 +115,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="card-wrapper">
                 <div class="card blog-card">
                     <div class="card-body">
@@ -132,7 +153,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
             <div class="card-wrapper">
                 <div class="card blog-card">
                     <div class="card-body">

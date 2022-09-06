@@ -11,7 +11,7 @@
         .form-control{
             background: #F2F1F1;
             border-radius: 23px;
-            height: 3vh;
+            height: 2.4rem;
             padding-top: 2.5vh;
             padding-bottom: 2.5vh;
             padding-left: 3vh;
@@ -39,9 +39,9 @@
 
 @section('content')
 <div id="content">
-    <h1 style="font-size: 5vh; padding-top: 5vh;"><b>Registro: USUARIO</b></h1>
+    <h1 style="font-size: 4rem; padding-top: 5vh;"><b>Registro: USUARIO</b></h1>
     <br>
-    <p style="font-size: 1.75vh; padding-left: 2.5vw;">
+    <p style="font-size:  1.4rem; padding-left: 2.5vw;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis 
     </p>
     <div class="row" style="padding-bottom: 25vh;">
@@ -71,7 +71,7 @@
                 </div>
                 <br>
                 <br>
-                <button class="btn btn-primary mb-2 col-auto" style="height: 5vh; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size: 1.75vh;"> Registrarme </button>
+                <button class="btn btn-primary mb-2 col-auto" style="height: 4rem; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size:  1.4rem;"> Registrarme </button>
             </form>
         </div>
         <div class="col" style="text-align: center;">

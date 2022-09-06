@@ -59,14 +59,14 @@
 <div class="page-content" id="content">
     <div class="row">
         <div class="col-6">
-            <h1 style="font-size: 5vh; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.75vh;">
+            <h1 style="font-size: 4rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
+            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
             </p>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.75vh;">
+            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
                 Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
             </p>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.75vh;">
+            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
                 Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
             </p>
         </div>
@@ -78,7 +78,7 @@
     </div>
 
     <h2><b>Nuestros Aliados</b></h2>
-    <p class="text-center" style="font-size: 2vh;"><b>Redes de Inversionistas, Aceleradoras y Concursos Mundiales</b></p>
+    <p class="text-center" style="font-size: 1.6rem;"><b>Redes de Inversionistas, Aceleradoras y Concursos Mundiales</b></p>
     <br>
     <br>
     <!-- Carrusel -->
