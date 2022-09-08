@@ -132,17 +132,17 @@
 @section('content')
 <div id="header-background">
     <div id="header-container" class="row">
-        <div class="col-md-6" style="padding-right: 5vw;">
+        <div class="col-md-6 col-sm-12 order-md-2">
+            <img src="{{asset('images/Startups Image.png')}}" 
+            style="filter: drop-shadow(0px 11.1346px 18.5576px rgba(2, 147, 52, 0.05)); border-radius: 213.531px 0px 218.785px 216px; max-width:90%; max-height: 40rem;">
+        </div>
+        <div class="col-md-6 col-sm-12 order-md-1" style="padding-right: 5vw;">
             <h1 id="header-title"><b>Somos el puente entre startups y empresas innovadoras</b></h1>
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.75rem; font-weight: 100;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
             </p>
         </div>
-        <div class="col-md-6">
-            <img src="{{asset('images/Startups Image.png')}}" 
-            style="filter: drop-shadow(0px 11.1346px 18.5576px rgba(2, 147, 52, 0.05)); border-radius: 213.531px 0px 218.785px 216px; max-width:90%; max-height: 40rem;">
-        </div>
-        <div id="header-button-div" class="col-md-12">
+        <div id="header-button-div" class="col-md-12 order-md-3">
             <button type="button" class="btn btn-primary" style="height: 4rem; padding-left: 1.6rem; padding-right: 1.6rem; font-size: 1.25rem; border-radius: 25px">Quiero empezar</button>
         </div>
     </div>

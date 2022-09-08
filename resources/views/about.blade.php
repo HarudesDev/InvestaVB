@@ -1,5 +1,21 @@
 @extends('layouts.app')
     <style>
+        @media (min-width: 576px) {
+            #carouselExampleControls{
+                width: 40vw;
+            }
+        }
+
+        @media (max-width: 575px) {
+            #carouselExampleControls{
+                height: 100px;
+            }
+            
+            .carousel-inner{
+                height:inherit;
+            }
+        }
+
 
         section.awSlider .carousel{
             display:table;
@@ -58,7 +74,12 @@
 @section('content')
 <div class="page-content" id="content">
     <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 col-sm-12 order-md-2" style="padding-left: 10%;">
+            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
+                <img class="title-image" id="enterprise-img" src="{{asset('images/Imagen empresa.png')}}" style="max-width:100%;">
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 order-md-1">
             <h1 style="font-size: 4rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
@@ -70,11 +91,6 @@
                 Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
             </p>
         </div>
-        <div class="col-6" style="padding-left: 10%;">
-            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
-                <img class="title-image" id="enterprise-img" src="{{asset('images/Imagen empresa.png')}}" style="max-width:100%;">
-            </div>
-        </div>
     </div>
 
     <h2><b>Nuestros Aliados</b></h2>
@@ -83,7 +99,7 @@
     <br>
     <!-- Carrusel -->
     <section class="awSlider">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 40vw;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleControls" data-slide-to="1"></li>
@@ -91,13 +107,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="First slide">
+                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Second slide">
+                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Third slide">
+                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

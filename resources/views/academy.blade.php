@@ -29,7 +29,12 @@
 @section('content')
 <div id="content">
     <div class="row">
-        <div class="col-6">
+        <div class="col-md-6 col-sm-6 order-md-2" style="padding-left: 10%;">
+            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
+                <img class="title-image" id="events-img" src="{{asset('images/academy-logo.jpg')}}" style="max-width:100%;">
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-6 order-md-1">
             <h1 style="font-size: 4rem; padding-top: 4rem;">Academia: blog</h1>
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
@@ -40,11 +45,6 @@
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
                 Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
             </p>
-        </div>
-        <div class="col-6" style="padding-left: 10%;">
-            <div style="background-image: url('{{ asset('images/Image background.png')}}');">
-                <img class="title-image" id="events-img" src="{{asset('images/academy-logo.jpg')}}" style="max-width:100%;">
-            </div>
         </div>
     </div>
     <!-- Academy Cards-->

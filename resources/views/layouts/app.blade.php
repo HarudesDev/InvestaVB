@@ -60,6 +60,14 @@
                     border-radius: 20px;
                     font-size: 1.25rem;
                 }
+
+                #logo-container{
+                    width:100%;
+                }
+
+                #navBar{
+                    width: 100vw;
+                }
             }
             body {
                 font-family: 'Ubuntu', sans-serif;
@@ -128,53 +136,50 @@
             .link-light:focus,.link-light:hover{
                 color:#f9fafb!important
             }
-
-            .ms-3{
-                margin-left: 1rem!important
-            }
         </style>
         @yield('css')
     </head>
 <body>
     <div id="page-container" class="container-fluid p-0">
         <div id="content-wrap">
-            <div id="mainNavigator" class="m-0 d-flex justify-content-between bg-grey1" style="font-size: 1.25rem;">
-                <div class="m-3">
-                    <p class="m-0"><small>¿Necesitas ayuda?</small></p>
-                    <p class="m-0"><small><strong>info@investavb.com</strong></small></p><p>
-                </p></div>
-                <nav class="navbar navbar-expand-lg p-0 m-3">
-                    <div class="row">
+            <!-- Page Header -->
+            <div id="mainNavigator" class="m-0 d-flex justify-content-between bg-grey1 flex-wrap" style="font-size: 1.25rem;">
+                <nav id="navBar" class="navbar navbar-expand-lg navbar-light p-0 m-3 order-md-2">
+                    <div id="logo-container" class="row">
                         <div class="col-12 d-flex justify-content-center">
                             <a class="navbar-brand" href="{{route('home')}}">
-                                <img src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:15rem;">
+                                <img id="" src="{{asset('images/Investa Logo.png')}}" alt="Investavb" style="max-width:15rem;">
                             </a>
                         </div>
-                        <div class="col-12 d-flex justify-content-center">
-                            <ul class="nav justify-content-end">   
-                                <li class="nav-item dropdown d-table">
-                                    <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="{{route('marketplace')}}" role="button" aria-expanded="false">
-                                        Market Place
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"> </a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
-                                </li>
-                                <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('events')}}">Eventos</a>
-                                </li>
-                                <li class="nav-item d-table">
-                                    <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">Contacto</a>
-                                </li>
-                            </ul>
-                        </div>
-                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 3vw;">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <div class="col-12 d-flex justify-content-center">
+                                <ul class="nav justify-content-lg-end">   
+                                    <li class="nav-item dropdown d-table">
+                                        <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="{{route('marketplace')}}" role="button" aria-expanded="false">
+                                            Market Place
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"> </a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item d-table">
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
+                                    </li>
+                                    <li class="nav-item d-table">
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('events')}}">Eventos</a>
+                                    </li>
+                                    <li class="nav-item d-table">
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">Contacto</a>
+                                    </li>
+                                </ul> 
+                            </div>   
+                        </div>                 
                     </div>
                 </nav>
-                <div class="m-3">
+                <div class="m-3 order-md-3">
                     <div class="d-flex justify-content-center">
                         <ul class="list-unstyled d-flex">
                             <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>   
@@ -186,13 +191,20 @@
                         <button type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;">Ingresar</button>
                     </div>
                 </div>
+                <div class="m-3 order-md-1">
+                    <p class="m-0"><small>¿Necesitas ayuda?</small></p>
+                    <p class="m-0"><small><strong>info@investavb.com</strong></small></p><p>
+                </p></div>
             </div>
+
+        <!-- Page Content -->
 
             <main style="max-width: 100vw;">
                 @yield('content')
             </main>
         </div>
 
+        <!-- Page Footer -->
         <footer id="page-footer" class="p-5 bg-blue1 text-white">
             <div class="row justify-content-center g-5">
                 <div class="col-12 col-lg-3 mb-4" style="text-align-last: center;">
