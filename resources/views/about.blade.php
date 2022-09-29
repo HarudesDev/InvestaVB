@@ -82,13 +82,13 @@
         <div class="col-md-6 col-sm-12 order-md-1">
             <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
+                Las startups constantemente buscan crear alianzas estratégicas con empresas para el desarrollo de nuevas tecnologías. 
             </p>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
+                Nosotros los acompañamos a generar estas alianzas mediante las diversas soluciones que manejamos.
             </p>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
+                Generación de ecosistemas, Expansión internacional, Busqueda de financiamiento, Conocimiento y Academia, Consultoría.
             </p>
         </div>
     </div>

@@ -37,18 +37,12 @@
         <div class="col-md-6 col-sm-6 order-md-1">
             <h1 style="font-size: 3.25rem; padding-top: 4rem;">Academia: blog</h1>
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
-            </p>
-            <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
-            </p>
-            <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
+                Brindamos información de vanguardia sobre el entorno de nuevas tecnologías, emprendimiento, expansión de mercado, nuevos conocimientos y estrategias empresariales. 
             </p>
         </div>
     </div>
     <!-- Academy Cards-->
-    <div class="row">
+    <div class="row" style="margin-top: 2rem;">
         <div class="col-md-4 col-sm-12">
             <div class="academy-card">
                 <div class="card">

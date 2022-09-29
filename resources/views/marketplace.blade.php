@@ -47,16 +47,55 @@
             padding-right: 7.5vw;
             padding-top: 2vh;
         }
+
+        .container {
+            position: relative;
+        }
+
+        .image {
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay-text {
+            overflow-y: auto;
+            margin-left: 5%;
+            margin-right: 5%;
+            color: black;
+            font-size: 1.15rem;
+            position: absolute;
+            height:100%;
+        }
+
+
     </style>
 @endsection
 
 @section('content')
 <div id="content">
     <div>
-        <h1 style="font-size: 3.25rem;"><b>MarketPlace (tipos de actores económicos)</b></h1>
+        <h1 style="font-size: 3.25rem;"><b>MarketPlace (Venture Client)</b></h1>
         <br>
         <p style="font-size: 1.4rem; padding-left: 2.5vw; ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis 
+            El programa Venture Client Investa VB ha sido diseñado para generar procesos rápidos de experimentación de soluciones innovadoras de startups en diversas áreas de diferentes empresas.
+            <br>
+            Las startups que deseen participar en el programa deberán inscribirse en un reto.
         </p>
     </div>
     <div style="text-align:center;">
@@ -84,19 +123,67 @@
         <div class="row" style="padding-bottom: 6rem;">
             <div class="col-md-2 col-sm-12"></div>
             <div class="col-md-2 col-sm-12">
-                <img class="marketplace-img" src="{{asset('images/Retos.jpg')}}" alt="Retos">
+                <div class="container">
+                    <img class="marketplace-img image" src="{{asset('images/Retos.jpg')}}" alt="Retos">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <br>
+                            Qué es un reto?
+                            <br>
+                            <div style="text-align:left;">
+                                Actualmente las empresas buscan nuevas formas, más rápidas y rentables de reducir sus desventajas. 
+                                <br>
+                                Con el programa Venture Client Investa VB, las startups tendrán la oportunidad de crear soluciones para las empresas.
+                                <br>
+                                Cada semana enviaremos información sobre los nuevos retos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h4 style="padding-top: 1.6rem;">Retos</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <img class="marketplace-img" src="{{asset('images/Comunidades.jpg')}}" alt="Comunidades">
+                <div class="container">
+                    <img class="marketplace-img" src="{{asset('images/Comunidades.jpg')}}" alt="Comunidades">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <br>
+                            <div style="text-align:left;">
+                                Forma parte de nuestra comunidad
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h4 style="padding-top: 1.6rem;">Comunidades</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <img class="marketplace-img" src="{{asset('images/Organismos.jpg')}}" alt="Organismos">
+                <div class="container">
+                    <img class="marketplace-img" src="{{asset('images/Organismos.jpg')}}" alt="Organismos">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <br>
+                            <div style="text-align:left;">
+                                Si eres una empresa forma parte de nuestro grupo de organizaciones
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h4 style="padding-top: 1.6rem;">Organismos</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <img class="marketplace-img" src="{{asset('images/Proyectos.jpg')}}" alt="Proyectos">
+                <div class="container">
+                    <img class="marketplace-img" src="{{asset('images/Proyectos.jpg')}}" alt="Proyectos">
+                    <div class="overlay">
+                        <div class="overlay-text">
+                            <br>
+                            <div style="text-align:left;">
+                                Si eres emprendedor no relacionado a nuevas tecnologías, este es un espacio para ti.
+                                <br>
+                                Conoce los nuevos proyectos.
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <h4 style="padding-top: 1.6rem;">Proyectos</h4>
             </div>
             <div class="col-md-2 col-sm-12">

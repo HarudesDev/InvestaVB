@@ -45,19 +45,16 @@
         <div class="col-md-6 col-sm-12 order-md-1">
             <h1 style="font-size: 3.25rem; padding-top: 5vh;">Eventos</h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
-            </p>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
-            </p>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Nullam ornare blandit urna, eu pulvinar elit faucibus eget. Sed justo mauris, ultricies eu urna at, gravida commodo mauris. Quisque ac felis ac sapien dictum gravida aliquet ac purus. Donec sit amet ex vel ex sollicitudin posuere at et metus. Duis sodales ligula nisi, molestie lacinia ex rhoncus vel.
+                Si eres un emprendedor, este es tu espacio de eventos de nuevas tecnologías. 
             </p>
         </div>
     </div>
     <br><br>
     <!-- Event List -->
     <div id="event-list-container">
+        <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
+            <b>Conoce la programación:</b>
+        </p>
         <div class="row" style="font-size: 1.6rem;">
             <div class="col">
                 <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
