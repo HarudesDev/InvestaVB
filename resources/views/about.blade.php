@@ -80,7 +80,7 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-12 order-md-1">
-            <h1 style="font-size: 4rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
+            <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in, accumsan tempus erat.
             </p>

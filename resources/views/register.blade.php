@@ -2,6 +2,16 @@
 
 @section('css')
     <style>
+        @media (min-width: 576px) {
+            
+        }
+
+        @media (max-width: 575px) {
+            #register-form{
+                padding-bottom: 30rem;
+            }
+        }
+
         .register-img{
             width: 80%;
             max-height: 45rem;
@@ -39,26 +49,33 @@
 
 @section('content')
 <div id="content">
-    <h1 style="font-size: 4rem; padding-top: 5vh;"><b>Registro: USUARIO</b></h1>
+    <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>Registro: USUARIO</b></h1>
     <br>
     <p style="font-size:  1.4rem; padding-left: 2.5vw;">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis 
     </p>
     <div class="row" style="padding-bottom: 25vh;">
-        <div class="col" style="padding-left: 6%; padding-right: 6%; padding-top: 6vh;">
-            <form>
+        <div class="col-md-5 col-sm-12 order-md-2" style="text-align: center;">
+            <img alt="Emprendedor" src="{{asset('images/Imagen emprendedor.jpg')}}" class="register-img">
+            <h4 style="padding-top: 2vh;">
+                Emprendedor
+            </h4>
+        </div>
+        <div class="col-md-7 col-sm-12 order-md-1" style="padding-left: 6%; padding-right: 6%; padding-top: 6vh;">
+            <form id="register-form" action="{{route('user.register')}}" method="POST">
+                @csrf
                 <div class="form-container">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-name" aria-describedby="Nombres y Apellidos" placeholder="Nombres y Apellidos / Razón Social">
+                        <input type="text" class="form-control" id="form-name" aria-describedby="Nombres y Apellidos" placeholder="Nombres y Apellidos / Razón Social" name="name">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-document-type" aria-describedby="Tipo de documento" placeholder="Tipo de documento">
+                        <input type="text" class="form-control" id="form-document-type" aria-describedby="Tipo de documento" placeholder="Tipo de documento" name="document-type">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-document-number" aria-describedby="Número de documento" placeholder="Número de documento">
+                        <input type="text" class="form-control" id="form-document-number" aria-describedby="Número de documento" placeholder="Número de documento" name="document-number">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="form-document-number" aria-describedby="Email" placeholder="Email">
+                        <input type="email" class="form-control" id="form-email" aria-describedby="Email" placeholder="Email" name="email">
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="info-treatment-authorize-check">
@@ -71,14 +88,8 @@
                 </div>
                 <br>
                 <br>
-                <button class="btn btn-primary mb-2 col-auto" style="height: 4rem; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size:  1.4rem;"> Registrarme </button>
+                <button class="btn btn-primary mb-2 col-auto" style="height: 4rem; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size:  1.4rem;" type="submit"> Registrarme </button>
             </form>
-        </div>
-        <div class="col" style="text-align: center;">
-            <img alt="Emprendedor" src="{{asset('images/Imagen emprendedor.jpg')}}" class="register-img">
-            <h4 style="padding-top: 2vh;">
-                Emprendedor
-            </h4>
         </div>
     </div>
 </div>

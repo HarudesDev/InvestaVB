@@ -24,3 +24,5 @@ Route::view('/contacto', 'contact')->name('contact');
 Route::view('/calendario', 'calendar')->name('calendar');
 Route::view('/blog', 'blog')->name('blog');
 Route::view('/registro', 'register')->name('register');
+
+Route::post('/registrar/usuario','UserController@register')->name('user.register');

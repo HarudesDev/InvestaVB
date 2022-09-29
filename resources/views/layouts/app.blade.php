@@ -90,7 +90,6 @@
                 padding-bottom: 15rem;
             }
 
-
             .btn-primary{
                 background-color: #31388E;
                 border-color: #31388E

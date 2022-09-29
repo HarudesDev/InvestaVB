@@ -68,7 +68,7 @@
             }
 
             #header-title{
-                font-size: 4rem;
+                font-size: 3.25rem;
             }
 
             #header-button-div{

@@ -29,7 +29,7 @@
                 padding-top: 5vh;
                 max-width: 100%;
                 margin-left: 0;
-                padding-bottom: 80vh;
+                padding-bottom: 40rem;
             }
         }
 
@@ -64,7 +64,7 @@
 @section('content')
 <div id="content">
     <div id="content-header">
-        <h1 style="font-size: 4rem;"><b>Contáctanos</b></h1>
+        <h1 style="font-size: 3.25rem; max-width:100%"><b>Contáctanos</b></h1>
         <br>
         <p style="font-size: 1.4rem;">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis 
