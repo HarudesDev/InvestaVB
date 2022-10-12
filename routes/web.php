@@ -24,5 +24,14 @@ Route::view('/contacto', 'contact')->name('contact');
 Route::view('/calendario', 'calendar')->name('calendar');
 Route::view('/blog', 'blog')->name('blog');
 Route::view('/registro', 'register')->name('register');
+Route::view('/servicios', 'services')->name('services');
+Route::view('/casos_de_exito', 'alies')->name('alies');
 
-Route::post('/registrar/usuario','UserController@register')->name('user.register');
+Route::get('/registrar/empresa','UserController@registerEnterprise')->name('user.enterprise.register');
+Route::post('/registrar/empresa','UserController@storeEnterprise')->name('user.enterprise.store');
+
+Route::get('/registrar/emprendedor','UserController@registerEntrepreneur')->name('user.entrepreneur.register');
+Route::post('/registrar/emprendedor','UserController@storeEntrepreneur')->name('user.entrepreneur.store');
+
+Route::get('/registrar/inversionista','UserController@registerPortfolio')->name('user.portfolio.register');
+Route::post('/registrar/inversionista','UserController@storePortfolio')->name('user.portfolio.store');

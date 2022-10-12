@@ -35,9 +35,9 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-6 order-md-1">
-            <h1 style="font-size: 3.25rem; padding-top: 4rem;">Academia: blog</h1>
+            <h1 style="font-size: 3.25rem; padding-top: 4rem;">Academia</h1>
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.4rem;">
-                Brindamos información de vanguardia sobre el entorno de nuevas tecnologías, emprendimiento, expansión de mercado, nuevos conocimientos y estrategias empresariales. 
+                Brindamos información de vanguardia sobre el entorno de nuevas tecnologías, emprendimiento, expansión de mercado, nuevos conocimientos y estrategias empresariales.
             </p>
         </div>
     </div>

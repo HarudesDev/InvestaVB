@@ -82,13 +82,10 @@
         <div class="col-md-6 col-sm-12 order-md-1">
             <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Las startups constantemente buscan crear alianzas estratégicas con empresas para el desarrollo de nuevas tecnologías. 
+                Somos una compañía con experiencia en el ecosistema emprendedor.
             </p>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Nosotros los acompañamos a generar estas alianzas mediante las diversas soluciones que manejamos.
-            </p>
-            <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Generación de ecosistemas, Expansión internacional, Busqueda de financiamiento, Conocimiento y Academia, Consultoría.
+                Impulsamos el crecimiento de emprendedores dedicados a la creación de nuevas tecnologías, mediante la generación de alianzas con empresas innovadoras, asesorías, internacionalización y exploración de financiamiento.
             </p>
         </div>
     </div>

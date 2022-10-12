@@ -9,7 +9,9 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="{{asset('js/libs/wrunner-jquery.js')}}"></script>
         <script src="{{asset('js/app.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css">
         <!-- CSS only -->
+        <link href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{asset('css/investa-app.css')}}">
         <link rel="stylesheet" href="{{asset('css/wrunner-default-theme.css')}}">
@@ -168,7 +170,10 @@
                                         <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
                                     </li>
                                     <li class="nav-item d-table">
-                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('events')}}">Eventos</a>
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('alies')}}">Casos de éxito</a>
+                                    </li>
+                                    <li class="nav-item d-table">
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('aboutUs')}}">Nosotros</a>
                                     </li>
                                     <li class="nav-item d-table">
                                         <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">Contacto</a>
@@ -181,13 +186,11 @@
                 <div class="m-3 order-md-3">
                     <div class="d-flex justify-content-center">
                         <ul class="list-unstyled d-flex">
-                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>   
-                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
-                            <li class="mx-3"><a class="link-dark" href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>  
+                            <li class="mx-3"><a class="link-dark" href="https://www.linkedin.com/company/investavb/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <button type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;">Ingresar</button>
+                        <a type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;" href="http://51.178.84.36/investaweb/public/login">Ingresar</a>
                     </div>
                 </div>
                 <div class="m-3 order-md-1">
@@ -213,14 +216,14 @@
                 <div class="col-12 col-sm-6 col-lg-2 mb-4">
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('home')}}" class="nav-link p-0 text-white">INICIO</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('aboutUs')}}" class="nav-link p-0 text-white">NOSOTROS</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('events')}}" class="nav-link p-0 text-white">EVENTOS</a></li>
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">CASO DE ÉXITO</a></li>
                     </ul>
                 </div>
 
             <div class="col-12 col-sm-6 col-lg-2 mb-4">
                     <ul class="nav flex-column gs-sm-5">
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">SERVICIOS</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('services')}}" class="nav-link p-0 text-white">SERVICIOS</a></li>
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('calendar')}}" class="nav-link p-0 text-white">CALENDARIO DE EVENTOS</a></li>
                         <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">PROYECTOS</a></li>            </ul>
             </div>
@@ -239,9 +242,7 @@
                 </div>
                 <div class="position-relative d-flex justify-content-center">
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-light" href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
-                        <li class="ms-3"><a class="link-light" href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
-                        <li class="ms-3"><a class="link-light" href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>     
+                        <li class="ms-3"><a class="link-light" href="https://www.linkedin.com/company/investavb/" target="_blank"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li>     
                     </ul>
                 </div>
             </div>

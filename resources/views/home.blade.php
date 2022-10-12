@@ -139,27 +139,52 @@
         <div class="col-md-6 col-sm-12 order-md-1" style="padding-right: 5vw;">
             <h1 id="header-title"><b>Somos el puente entre startups y empresas innovadoras</b></h1>
             <p style="padding-top: 0.8rem; padding-bottom: 2.4rem; font-size: 1.75rem; font-weight: 100;">
-                Creamos alianzas entre empresas y startups, impulsando el desarrollo de nuevas tecnologías y así contribuir de manera significativa al crecimiento del país.
+                Creamos alianzas entre empresas y startups, impulsando la innovación, experimentación e inversión financiera para contribuir de manera significativa en el desarrollo de nuevas tecnologías.
             </p>
         </div>
         <div id="header-button-div" class="col-md-12 order-md-3">
-            <button type="button" class="btn btn-primary" style="height: 4rem; padding-left: 1.6rem; padding-right: 1.6rem; font-size: 1.25rem; border-radius: 25px">Quiero empezar</button>
+            <a class="btn btn-primary" style="height: 4rem; padding-left: 1.6rem; padding-right: 1.6rem; font-size: 1.25rem; border-radius: 25px" href="{{route('marketplace')}}"><div style="padding-top:5%;">Quiero empezar</div></a>
         </div>
     </div>
+    <div style="text-align: center; margin-top: 3rem;">
+        <h2 style="margin-bottom: 3rem;">En Investa VB generamos Valor:</h2>
+        <div class="row">
+            <div class="col-md-3 col-sm-12"></div>
+            <div class="col-md-2 col-sm-4">
+                <h4>Más de</h4>
+                <h1 style="color: #38519c;"><b>215</b></h1>
+                <h4>Startups en nuestro portafolio actual</h4>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <h4>Más de</h4>
+                <h1 style="color: #38519c;"><b>60</b></h1>
+                <h4>Años de Experiencia de nuestro Equipo</h4>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <h4>Visión</h4>
+                <h1 style="color: #38519c;"><b>360</b></h1>
+                <h4>del Ecosistema Emprendedor de la Alianza del Pacífico y España</h4>
+            </div>
+            <div class="col-md-3 col-sm-12"></div>
+        </div>
+    </div>
+    <h2 style="margin-left: 10%; margin-top: 2rem;">
+        <b>Nuestros servicios:</b>
+    </h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-top: 2.4rem; padding-left: 12.5vw;">
         <li class="nav-item tab-nav">
             <a class="nav-link active" id="ecosystem-generation-tab" data-toggle="tab" href="#ecosystem-generation" role="tab" aria-controls="ecosystem-generation" aria-selected="true" style="height:100%; color: black; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/Economy ecosistem icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Generación de</h4>
-                <h4>Ecosistema</h4>
+                <h4>Círculo de</h4>
+                <h4>Negocios</h4>
             </a>
         </li>
         <li class="nav-item tab-nav">
             <a class="nav-link" id="international-expantion-tab" data-toggle="tab" href="#international-expantion" role="tab" aria-controls="international-expantion" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/International expantion icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Expanción</h4>
+                <h4>Expansión</h4>
                 <h4>Internacional</h4>
             </a>
         </li>
@@ -169,14 +194,6 @@
                 <br>
                 <h4>Búsqueda de</h4>
                 <h4>Financiamiento</h4>
-            </a>
-        </li>
-        <li class="nav-item tab-nav">
-            <a class="nav-link" id="knowledge-and-academy-tab" data-toggle="tab" href="#knowledge-and-academy" role="tab" aria-controls="knowledge-and-academy" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
-                <img src="{{asset('images/Knowledge and academy icon.png')}}" style="height: 8rem;">
-                <br>
-                <h4>Conocimiento</h4>
-                <h4>y Academia</h4>
             </a>
         </li>
         <li class="nav-item tab-nav">
@@ -195,33 +212,31 @@
             <div class="col-md-7 col-sm-12">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="ecosystem-generation" role="tabpanel" aria-labelledby="ecosystem-generation-tab">
-                        <h3 style="1.5rem;">Nuevos Escenarios</h3>
+                        <h3 style="1.5rem;">Nuevas Soluciones</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Ayudamos en la creación de nuevos ecosistemas de negocio, en donde convergen emprendedores, empresas, inversionistas y nuevo conocimiento, para el surgimiento y desarrollo de las futuras empresas. 
+                            Ayudamos en la creación de nuevos ecosistemas de negocio, en donde convergen emprendedores, empresas, inversionistas y nuevo conocimiento.
+                            <a href="{{route('services')}}">ver más...</a>
                         </p>
                     </div>
                     <div class="tab-pane fade" id="international-expantion" role="tabpanel" aria-labelledby="international-expantion-tab">
                         <h3 style="1.5rem;">Nuevos Mercados</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Guiamos en el proceso de extensión de operaciones en mercados fuera de su país de origen, mediante alianzas estratégicas y asesorías con el fin de incrementar su competitividad empresarial. 
+                            Ayudamos en el proceso de ingreso a nuevos mercados centralizados en la Alianza del Pacífico y con nuestra amplia red te conectamos con potenciales socios y clientes.
+                            <a href="{{route('services')}}">ver más...</a>
                         </p>
                     </div>
                     <div class="tab-pane fade" id="financial-search" role="tabpanel" aria-labelledby="financial-search-tab">
                         <h3 style="1.5rem;">Nuevos Inversionistas</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Ayudamos en la búsqueda de financiamiento estatal o particular mediante el acompañamiento y asesoramiento correcto.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="knowledge-and-academy" role="tabpanel" aria-labelledby="knowledge-and-academy-tab">
-                        <h3 style="1.5rem;">Nueva Información</h3>
-                        <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Brindamos información de vanguardia sobre el entorno de nuevas tecnologías, emprendimiento, expansión de mercado, nuevos conocimientos y estrategias empresariales.
+                            Ayudamos en la búsqueda de recursos financieros para la implementación de nuevas ideas, lo hacemos mediante el acompañamiento y asesoramiento correcto.
+                            <a href="{{route('services')}}">ver más...</a>
                         </p>
                     </div>
                     <div class="tab-pane fade" id="consultory" role="tabpanel" aria-labelledby="consultory-tab">
-                        <h3 style="1.5rem;">Nueva Experiencia</h3>
+                        <h3 style="1.5rem;">Nuevas Experiencias</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Brindamos soluciones como asesorías y entrenamientos en mejora estratégica, capacidad innovadora, modelo de negocio, aprestamiento para emprendimiento y para la inversión, con el fin de impulsar a los nuevos emprendedores.
+                            Guiamos y acompañamos en el proceso de desarrollo startups, mediante asesorías de mejora estratégica, capacidad innovadora, modelo de negocio y conocimiento del mercado.
+                            <a href="{{route('services')}}">ver más...</a>
                         </p>
                     </div>
                 </div>
@@ -303,7 +318,7 @@
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
                             <h3><b>OPORTUNIDADES</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Conoce los nuevos proyectos que están generando las empresas, busca una solución rentable, genera nuevos socios y amplia tu cartera de clientes.
+                                Conoce los nuevos proyectos que están generando las empresas, busca una solución rentable y genera nuevos socios.
                             </p>
                             <br>
                             <br>
@@ -317,9 +332,9 @@
                     <div class="card border-0" style="height: 100%;">
                         <div class="card-body ecosystem-card" style="padding: 2.4rem;">
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
-                            <h3><b>DESAFÍOS</b></h3>
+                            <h3><b>RETOS</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Conoce los nuevos retos que están atravesando las empresas, crea soluciones innovadoras, genera nuevos socios e impulsa tu emprendimiento.
+                                Conoce los nuevos desafíos que están atravesando las empresas, crea soluciones innovadoras, genera nuevos socios e impulsa tu emprendimiento.
                             </p>
                             <br>
                             <br>
@@ -335,7 +350,7 @@
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
                             <h3><b>GESTIÓN DE ACUERDOS</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Generamos confianza en los nuevos ecosistemas mediante acuerdos estándares que manejamos, relacionados a nuevas tecnologías.
+                                Creamos y acompañamos nuevos acuerdos bajo los estándares legales registrados en cada país y sector.
                             </p>
                             <br>
                             <br>
@@ -352,7 +367,7 @@
         <h2 style="font-size: 3.5rem;">Nuestros especialistas a tu lado</h2>
         <div style="width: 25%; background-color: #31388E; height: 0.75rem;"></div>
         <p style="width: 70%; font-size: 1.25rem; padding-top: 2rem;">
-            Somos un equipo con experiencia, diverso y amante de la innovación.
+            Somos un equipo con experiencia y amante de la innovación.
         </p>
         <div>
             <div class="row" style="padding-top: 4rem;">
@@ -373,7 +388,7 @@
                                     <br>
                                     Docente de postgrado en políticas públicas de innovación, finanzas e innovación empresarial
                                     <br>
-                                    in: <a href="https://www.linkedin.com/in/benavidesjavier/">https://www.linkedin.com/in/benavidesjavier/</a>
+                                    <a class="link-dark" href="https://www.linkedin.com/in/benavidesjavier/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -395,7 +410,7 @@
                                     <br>
                                     Especializado en modelos de negocio, estrategia e innovación. Docente de pre y post grado en emprendimiento e innovación. Speaker internacional en diversos eventos de innovación, startups y emprendimiento.
                                     <br>
-                                    in: <a href="https://www.linkedin.com/in/salazarluis/">https://www.linkedin.com/in/salazarluis/</a>
+                                    <a class="link-dark" href="https://www.linkedin.com/in/salazarluis/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>
                             </div>
                         </div>
@@ -418,7 +433,7 @@
                                     <br>
                                     Ponente en temas de Innovación y agtech en distintos eventos nacionales e internacionales.
                                     <br>
-                                    in: <a href="https://www.linkedin.com/in/alejandrobernaola/">https://www.linkedin.com/in/alejandrobernaola/</a>
+                                    <a class="link-dark" href="https://www.linkedin.com/in/alejandrobernaola/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>
                             </div>
                         </div>

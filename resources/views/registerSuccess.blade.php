@@ -59,6 +59,7 @@
             #backBtn{
                 border-radius: 20px;
                 font-size: 1.5rem;
+                width: 12.5rem;
             }
 
         </style>
@@ -74,10 +75,7 @@
             Felicidades, te has registrado
         </p>
         <p>
-            Tu contraseña es: {{$password}}
-        </p>
-        <p>
-            <b>No olvides cambiar tu contraseña y terminar tu registro <a href="#">aquí</a></b>
+            <b>Recibirás un correo con la información para validar tu registro en nuestra plataforma</b>
         </p>
         <br>
         <p>

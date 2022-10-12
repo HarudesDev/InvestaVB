@@ -21,9 +21,7 @@
         .form-control{
             background: #F2F1F1;
             border-radius: 23px;
-            height: 2.4rem;
-            padding-top: 2.5vh;
-            padding-bottom: 2.5vh;
+            height: 4rem;
             padding-left: 3vh;
         }
 
@@ -49,33 +47,47 @@
 
 @section('content')
 <div id="content">
-    <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>Registro: USUARIO</b></h1>
+    <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>Registro: Empresa</b></h1>
     <br>
     <p style="font-size:  1.4rem; padding-left: 2.5vw;">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis 
+        Conoce las nuevas soluciones
     </p>
     <div class="row" style="padding-bottom: 25vh;">
         <div class="col-md-5 col-sm-12 order-md-2" style="text-align: center;">
-            <img alt="Emprendedor" src="{{asset('images/Imagen emprendedor.jpg')}}" class="register-img">
+            <img alt="Empresa" src="{{asset('images/Imagen empresa.jpg')}}" class="register-img">
             <h4 style="padding-top: 2vh;">
-                Emprendedor
+                Empresa
             </h4>
         </div>
         <div class="col-md-7 col-sm-12 order-md-1" style="padding-left: 6%; padding-right: 6%; padding-top: 6vh;">
-            <form id="register-form" action="{{route('user.register')}}" method="POST">
+            <form id="register-form" action="{{route('user.enterprise.store')}}" method="POST">
                 @csrf
                 <div class="form-container">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-name" aria-describedby="Nombres y Apellidos" placeholder="Nombres y Apellidos / Razón Social" name="name">
+                        <input type="text" class="form-control" id="form-name" aria-describedby="Nombres" placeholder="Nombres" name="name">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-document-type" aria-describedby="Tipo de documento" placeholder="Tipo de documento" name="document-type">
+                        <input type="text" class="form-control" id="form-lastname" aria-describedby="Apellidos" placeholder="Apellidos" name="lastname">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control @error('document-type') is-invalid @enderror" id="input-document-type" name="document-type">
+                            @foreach($document_types as $document_type)
+                                <option value="{{$document_type->id}}">
+                                    {{$document_type->short_name}}
+                                </option>
+                            @endforeach
+                        </select>
+                        @error('document-type')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="form-document-number" aria-describedby="Número de documento" placeholder="Número de documento" name="document-number">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="form-email" aria-describedby="Email" placeholder="Email" name="email">
+                        <input type="email" class="form-control" id="form-email" aria-describedby="Email" placeholder="Email corporativo" name="email">
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="info-treatment-authorize-check">

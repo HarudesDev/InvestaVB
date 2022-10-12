@@ -90,12 +90,12 @@
 @section('content')
 <div id="content">
     <div>
-        <h1 style="font-size: 3.25rem;"><b>MarketPlace (Venture Client)</b></h1>
+        <h1 style="font-size: 3.25rem;"><b>MarketPlace</b></h1>
         <br>
         <p style="font-size: 1.4rem; padding-left: 2.5vw; ">
-            El programa Venture Client Investa VB ha sido diseñado para generar procesos rápidos de experimentación de soluciones innovadoras de startups en diversas áreas de diferentes empresas.
+            Contamos con un círculo de negocios que conecta a emprendedores con empresas para crear soluciones innovadoras a los retos actuales.
             <br>
-            Las startups que deseen participar en el programa deberán inscribirse en un reto.
+            Si eres emprendedor puedes participar en un Reto.
         </p>
     </div>
     <div style="text-align:center;">
@@ -103,15 +103,15 @@
         <div class="row">
             <div class="col-md-3 col-sm-12"></div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('register')}}"><img class="marketplace-img" src="{{asset('images/Imagen emprendedor.png')}}" alt="Emprendedor"></a>
+                <a href="{{route('user.entrepreneur.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen emprendedor.png')}}" alt="Emprendedor"></a>
                 <h4 style="padding-top: 1.6rem;">Emprendedor</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('register')}}"><img class="marketplace-img" src="{{asset('images/Imagen empresa.png')}}" alt="Empresa"></a>
+                <a href="{{route('user.enterprise.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen empresa.png')}}" alt="Empresa"></a>
                 <h4 style="padding-top: 1.6rem;">Empresa</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('register')}}"><img class="marketplace-img" src="{{asset('images/Imagen inversionista.png')}}" alt="Inversionista"></a>
+                <a href="{{route('user.portfolio.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen inversionista.png')}}" alt="Inversionista"></a>
                 <h4 style="padding-top: 1.6rem;">Inversionista</h4>
             </div>
             <div class="col-md-3 col-sm-12">
@@ -128,14 +128,8 @@
                     <div class="overlay">
                         <div class="overlay-text">
                             <br>
-                            Qué es un reto?
-                            <br>
                             <div style="text-align:left;">
-                                Actualmente las empresas buscan nuevas formas, más rápidas y rentables de reducir sus desventajas. 
-                                <br>
-                                Con el programa Venture Client Investa VB, las startups tendrán la oportunidad de crear soluciones para las empresas.
-                                <br>
-                                Cada semana enviaremos información sobre los nuevos retos.
+                                Nuevos desafíos de las empresas
                             </div>
                         </div>
                     </div>
@@ -163,7 +157,7 @@
                         <div class="overlay-text">
                             <br>
                             <div style="text-align:left;">
-                                Si eres una empresa forma parte de nuestro grupo de organizaciones
+                                Forma parte de nuestro grupo de organizaciones
                             </div>
                         </div>
                     </div>
@@ -177,9 +171,7 @@
                         <div class="overlay-text">
                             <br>
                             <div style="text-align:left;">
-                                Si eres emprendedor no relacionado a nuevas tecnologías, este es un espacio para ti.
-                                <br>
-                                Conoce los nuevos proyectos.
+                                Emprendimientos tradicionales
                             </div>
                         </div>
                     </div>
