@@ -29,7 +29,7 @@ class AccountMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Finalización de resistro')
+        return $this->subject('Finalización de registro')
                     ->view('emails.registerEmail');
     }
 }

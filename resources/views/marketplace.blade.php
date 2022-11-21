@@ -103,15 +103,51 @@
         <div class="row">
             <div class="col-md-3 col-sm-12"></div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('user.entrepreneur.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen emprendedor.png')}}" alt="Emprendedor"></a>
+                <a href="{{route('user.entrepreneur.register')}}">
+                    <div class="container">
+                        <img class="marketplace-img" src="{{asset('images/Imagen emprendedor.png')}}" alt="Emprendedor">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <br>
+                                <div style="text-align:left;">
+                                    Conecta tus ideas con empresas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <h4 style="padding-top: 1.6rem;">Emprendedor</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('user.enterprise.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen empresa.png')}}" alt="Empresa"></a>
+                <a href="{{route('user.enterprise.register')}}">
+                    <div class="container">
+                        <img class="marketplace-img" src="{{asset('images/Imagen empresa.png')}}" alt="Empresa">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <br>
+                                <div style="text-align:left;">
+                                    Conoce las nuevas soluciones 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <h4 style="padding-top: 1.6rem;">Empresa</h4>
             </div>
             <div class="col-md-2 col-sm-12">
-                <a href="{{route('user.portfolio.register')}}"><img class="marketplace-img" src="{{asset('images/Imagen inversionista.png')}}" alt="Inversionista"></a>
+                <a href="{{route('user.portfolio.register')}}">
+                    <div class="container">
+                        <img class="marketplace-img" src="{{asset('images/Imagen inversionista.png')}}" alt="Inversionista">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <br>
+                                <div style="text-align:left;">
+                                    Conoce las nuevas tecnologías
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
                 <h4 style="padding-top: 1.6rem;">Inversionista</h4>
             </div>
             <div class="col-md-3 col-sm-12">

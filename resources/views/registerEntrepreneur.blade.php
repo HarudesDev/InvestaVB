@@ -64,10 +64,20 @@
                 @csrf
                 <div class="form-container">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-name" aria-describedby="Nombres" placeholder="Nombres" name="name">
+                        <input type="text" class="form-control @error('name') is-invalid @enderror" id="form-name" aria-describedby="Nombres" placeholder="Nombres" name="name">
+                        @error('name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-lastname" aria-describedby="Apellidos" placeholder="Apellidos" name="lastname">
+                        <input type="text" class="form-control @error('lastname') is-invalid @enderror" id="form-lastname" aria-describedby="Apellidos" placeholder="Apellidos" name="lastname">
+                        @error('lastname')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <select class="form-control @error('document-type') is-invalid @enderror" id="input-document-type" name="document-type">
@@ -84,10 +94,20 @@
                         @enderror
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="form-document-number" aria-describedby="Número de documento" placeholder="Número de documento" name="document-number">
+                        <input type="text" class="form-control @error('document-number') is-invalid @enderror" id="form-document-number" aria-describedby="Número de documento" placeholder="Número de documento" name="document-number">
+                        @error('document-number')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="form-email" aria-describedby="Email" placeholder="Email" name="email">
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" id="form-email" aria-describedby="Email" placeholder="Email" name="email">
+                        @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
                     </div>
                     <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="info-treatment-authorize-check">
@@ -100,9 +120,13 @@
                 </div>
                 <br>
                 <br>
-                <button class="btn btn-primary mb-2 col-auto" style="height: 4rem; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size:  1.4rem;" type="submit"> Registrarme </button>
+                <button id="register-button" class="btn btn-primary mb-2 col-auto" style="height: 4rem; background-color: #010133; border-color: #010133; border-radius: 20px; width: 100%; font-size:  1.4rem;" type="submit"> Registrarme </button>
             </form>
         </div>
     </div>
 </div>
+@endsection
+
+@section('scripts')
+    <script src="{{asset('js/register.js')}}"></script>
 @endsection
