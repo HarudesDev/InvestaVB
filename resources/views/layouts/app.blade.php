@@ -167,16 +167,18 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item d-table">
-                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">Academia</a>
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('academy')}}">{{__('lang.Academy')}}</a>
                                     </li>
+                                    <!--
                                     <li class="nav-item d-table">
                                         <a class="nav-link d-table-cell align-middle link-dark" href="{{route('alies')}}">Casos de éxito</a>
                                     </li>
+                                    -->
                                     <li class="nav-item d-table">
-                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('aboutUs')}}">Nosotros</a>
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('aboutUs')}}">{{__('lang.About-us')}}</a>
                                     </li>
                                     <li class="nav-item d-table">
-                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">Contacto</a>
+                                        <a class="nav-link d-table-cell align-middle link-dark" href="{{route('contact')}}">{{__('lang.Contact')}}</a>
                                     </li>
                                 </ul> 
                             </div>   
@@ -190,12 +192,34 @@
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center">
-                        <a type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;" href="https://web.investavb.com/investaweb/public/login">Ingresar</a>
+                        <a type="button" class="btn btn-outline-primary w-100" style="height: 3.rem; font-size: 1.25rem; margin-top: 3rem;" href="https://web.investavb.com/investaweb/public/login">{{__('lang.Login')}}</a>
                     </div>
                 </div>
                 <div class="m-3 order-md-1">
-                    <p class="m-0"><small>¿Necesitas ayuda?</small></p>
+                    <p class="m-0"><small>{{__('lang.Do-you-need-help?')}}</small></p>
                     <p class="m-0"><small><strong>info@investavb.com</strong></small></p><p>
+                    <p class="m-0">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: black;">
+                                    @if(App::getLocale() == 'es')
+                                        Español 
+                                    @else
+                                        English
+                                    @endif
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('language.change', ['locale'=>'es']) }}">
+                                        Español
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('language.change', ['locale'=>'en']) }}">
+                                        English
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </p>
                 </p></div>
             </div>
 
@@ -211,34 +235,35 @@
             <div class="row justify-content-center g-5">
                 <div class="col-12 col-lg-3 mb-4" style="text-align-last: center;">
                     <img src="{{asset('images/logo blanco.png')}}" style="width:213px; height:102px;" alt="Investavb">
-                    <p class="text-center">Transfórmate y Escala</p>
+                    <p class="text-center">{{__('lang.Transform-and-Scale')}}</p>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-2 mb-4">
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('home')}}" class="nav-link p-0 text-white">INICIO</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('events')}}" class="nav-link p-0 text-white">EVENTOS</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">CASO DE ÉXITO</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('home')}}" class="nav-link p-0 text-white">{{__('lang.HOME')}}</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('events')}}" class="nav-link p-0 text-white">{{__('lang.EVENTS')}}</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">{{__('lang.SUCCESS-STORIES')}}</a></li>
                     </ul>
                 </div>
 
             <div class="col-12 col-sm-6 col-lg-2 mb-4">
                     <ul class="nav flex-column gs-sm-5">
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('services')}}" class="nav-link p-0 text-white">SERVICIOS</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('calendar')}}" class="nav-link p-0 text-white">CALENDARIO DE EVENTOS</a></li>
-                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">PROYECTOS</a></li>            </ul>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('services')}}" class="nav-link p-0 text-white">{{__('lang.SERVICES')}}</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('calendar')}}" class="nav-link p-0 text-white">{{__('lang.EVENTS-CALENDAR')}}</a></li>
+                        <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">{{__('lang.PROJECTS')}}</a></li>
+                    </ul>
             </div>
 
             <div class="col-12 col-lg-2 mb-4">
                 <ul class="nav flex-column">
-                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">SUSCRÍBETE</a></li>
-                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">CODIGO DE ÉTICA</a></li>
-                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('contact')}}" class="nav-link p-0 text-white">CONTÁCTANOS</a></li>
+                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">{{__('lang.SUBSCRIBE')}}</a></li>
+                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="#" class="nav-link p-0 text-white">{{__('lang.CODE-OF-ETHICS')}}</a></li>
+                <li class="nav-item mb-2 ms-5 ms-sm-0"><a href="{{route('contact')}}" class="nav-link p-0 text-white">{{__('lang.CONTACT-US')}}</a></li>
                 </ul>
             </div>
 
             <div class="col-12 col-lg-3 mb-4">
                 <div class="position-relative d-flex justify-content-center">
-                    <p>CONÉCTATE CON INVESTAVB</p>
+                    <p>{{__('lang.CONNECT-WITH-INVESTA-VB')}}</p>
                 </div>
                 <div class="position-relative d-flex justify-content-center">
                     <ul class="list-unstyled d-flex">
@@ -249,7 +274,7 @@
             </div>
             
             <div class="border-top">
-                <p class="text-center m-0">© Todos los derechos reservados - investavb</p>
+                <p class="text-center m-0">© {{__('lang.All-rights-reserved')}} - investavb</p>
                 <p class="text-center m-0">Powered by Ingenia3Peru</p>
             </div>
         </footer>

@@ -2,7 +2,7 @@
     <style>
         @media (min-width: 576px) {
             #carouselExampleControls{
-                width: 40vw;
+                width: 60rem;
             }
         }
 
@@ -66,10 +66,28 @@
         }
 
         .carousel-item{
-            height: 28vh;
+            height: 25rem;
+        }
+
+        .carousel-content {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            right: 10%;
+            z-index: 20;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,.6);
+        }
+
+        .carousel-img {
+            max-width: 100%;            
+            height: 25rem;            
         }
 
 
+        .btn-outline-primary:hover{
+            color: white;
+        }
     </style>
 @section('content')
 <div class="page-content" id="content">
@@ -94,6 +112,17 @@
     <p class="text-center" style="font-size: 1.6rem;"><b>Redes de Inversionistas, Aceleradoras y Concursos Mundiales</b></p>
     <br>
     <br>
+    <!--
+        University Startup World Cup (Concurso Internacional)
+        <br>
+        BBCS Capital (Compañía peruana) | <a href="http://www.bbcscapital.com/" target="_blank">www.bbcscapital.com/</a>
+        <br>
+        DADNEO (Fondo de Inversión – Chile) | <a href="https://www.dadneo.com/" target="_blank">www.dadneo.com/</a>
+        <br>
+        WEMPO Academy (Compañía) | <a href="https://wempo-peru.org/" target="_blank">wempo-peru.org/</a>
+        <br>
+        Creame (Asociación colombiana) | <a href="https://www.creame.com.co/" target="_blank">www.creame.com.co/</a>
+     -->
     <!-- Carrusel -->
     <section class="awSlider">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -101,16 +130,87 @@
                 <li data-target="#carouselExampleControls" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleControls" data-slide-to="1"></li>
                 <li data-target="#carouselExampleControls" data-slide-to="2"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="3"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="4"></li>
+                <li data-target="#carouselExampleControls" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="First slide">
+                    <img class="carousel-img" src="{{asset('images/CIDE PUCP.png')}}" alt="First slide" style="width: 100%;">
+                    <div class="carousel-content" style="margin-left: 7.5rem;">
+                        <p>
+                        Se denomina ecosistema de emprendimiento e innovación a todas las organizaciones involucradas 
+                        en dar soporte e impulsar al emprendedor, promoviendo la innovación y el desarrollo de nuevas 
+                        propuestas que generen valor. Nosotros hemos estado por más de 20 años con ustedes.
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://cide.pucp.edu.pe/" style="border-color: white; color:white;" target="_blank">Leer más</a>
+                    </div>                    
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Second slide">
+                    <img class="carousel-img" src="{{asset('images/Usil Ventures.png')}}" alt="First slide" style="object-fit: cover; width: 100%;">
+                    <div class="carousel-content">
+                        <h3>
+                            Usil Ventures
+                        </h3>
+                        <p>
+                        Somos la incubadora y aceleradora del Grupo Educativo San Ignacio de Loyola respaldada por el 
+                        programa Innóvate Perú, que tiene incorporado un modelo educativo emprendedor que fomenta la 
+                        innovación, tecnología y sostenibilidad con la finalidad de crear startups globales.
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://usilventures.com/" style="border-color: white; color:white;" target="_blank">Leer más</a>
+                    </div>  
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid carousel-img" src="{{asset('images/Future Agro Challenge text.png')}}" alt="Third slide">
+                    <img class="carousel-img" src="{{asset('images/CBNET.png')}}" alt="First slide" style="object-fit: cover;">
+                    <div class="carousel-content" style="color: black; margin-left: 17.5rem;">
+                        <h3>
+                            Creative Business Network
+                        </h3>
+                        <p>
+                        Creative Business Cup is an annual global competition, enrolling participants from more than 80 countries from all over the world.  
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://cbnet.com/cup/" style="border-color: black;" target="_blank">Leer más</a>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="{{asset('images/FUTURE AGRO CHALLENGE.png')}}" alt="First slide" style="object-fit: cover;">
+                    <div class="carousel-content" style="color: black; margin-left: 12.5rem;">
+                        <h3>
+                            Future Agro Challenge
+                        </h3>
+                        <p>
+                        There’s an agricultural revolution underway. FAC anchors a dynamic community that takes root in each joining nation, 
+                        enriching the global conversation with a transfer of ideas and solutions. Each nation and region brings a new perspective, 
+                        fresh concepts, unique solutions borne of their own individual experiences in overcoming obstacles.
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://facagro.com/" style="border-color: black;" target="_blank">Leer más</a>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="{{asset('images/gbsn.png')}}" alt="First slide" style="object-fit: cover;">
+                    <div class="carousel-content" style="color: black; margin-left: 10rem;">
+                        <h3>
+                            Global Business School Network
+                        </h3>
+                        <p>
+                        Our purpose is for the developing world to have the management and entrepreneurship talent it needs to generate prosperity.
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://gbsn.org/" style="border-color: black;" target="_blank">Leer más</a>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img class="carousel-img" src="{{asset('images/ACM.png')}}" alt="First slide" style="object-fit: cover;">
+                    <div class="carousel-content" style="color: black; margin-left: 12.5rem;">
+                        <h3>
+                            Advertising Consulting Management
+                        </h3>
+                        <p>
+                        ACM - Advertising, Consulting and Management Co, provides marketing, consulting, and company management 
+                        services to select US companies and international clients. Additionally, ACM specializes in market 
+                        research, property management, business advisory services, and project management.
+                        </p>
+                        <a class="btn btn-outline-primary" href="https://acmventures.com/" style="border-color: black;" target="_blank">Leer más</a>
+                    </div>  
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

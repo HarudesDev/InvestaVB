@@ -13,7 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Auth::routes();
+Route::get('/cambiar_idioma/{locale}', function ($locale) {
+    if (! in_array($locale, ['en', 'es'])) {
+        abort(400);
+    }
+    app()->setLocale($locale);
+    \Session::put('locale', $locale);
+    return redirect()->back();
+    //
+})->name('language.change');
 
 Route::view('/marketplace', 'marketplace')->name('marketplace');
 Route::view('/inicio', 'home')->name('home');
