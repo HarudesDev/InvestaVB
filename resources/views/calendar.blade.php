@@ -22,7 +22,7 @@
 
 @section('content')
 <div id="content">
-    <h1>Calendario</h1>
+    <h1>{{__('lang.Calendar')}}</h1>
     <div class="embed-container">
         <iframe src="https://calendly.com/i3peru/consultorias-y-proyectos" frameborder="0" allowfullscreen=""></iframe>
     </div>

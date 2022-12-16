@@ -161,46 +161,46 @@
                 <h4>{{__('lang.Experience-years-on-our-team')}}</h4>
             </div>
             <div class="col-md-2 col-sm-4">
-                <h4>Visión{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.Vision')}}</h4>
                 <h1 style="color: #38519c;"><b>360</b></h1>
-                <h4>del Ecosistema Emprendedor de la Alianza del Pacífico y España{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.Ecosystem-degrees')}}</h4>
             </div>
             <div class="col-md-3 col-sm-12"></div>
         </div>
     </div>
     <h2 style="margin-left: 10%; margin-top: 2rem;">
-        <b>Nuestros servicios:{{__('lang.More-than')}}</b>
+        <b>{{__('lang.Our-services:')}}</b>
     </h2>
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="padding-top: 2.4rem; padding-left: 12.5vw;">
         <li class="nav-item tab-nav">
             <a class="nav-link active" id="ecosystem-generation-tab" data-toggle="tab" href="#ecosystem-generation" role="tab" aria-controls="ecosystem-generation" aria-selected="true" style="height:100%; color: black; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/Economy ecosistem icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Círculo de{{__('lang.More-than')}}</h4>
-                <h4>Negocios{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.Business-circle-1')}}</h4>
+                <h4>{{__('lang.Business-circle-2')}}</h4>
             </a>
         </li>
         <li class="nav-item tab-nav">
             <a class="nav-link" id="international-expantion-tab" data-toggle="tab" href="#international-expantion" role="tab" aria-controls="international-expantion" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/International expantion icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Expansión{{__('lang.More-than')}}</h4>
-                <h4>Internacional{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.International-expantion-1')}}</h4>
+                <h4>{{__('lang.International-expantion-2')}}</h4>
             </a>
         </li>
         <li class="nav-item tab-nav">
             <a class="nav-link" id="financial-search-tab" data-toggle="tab" href="#financial-search" role="tab" aria-controls="financial-search" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/Finalcial search icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Búsqueda de{{__('lang.More-than')}}</h4>
-                <h4>Financiamiento{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.Financial-search-1')}}</h4>
+                <h4>{{__('lang.Financial-search-2')}}</h4>
             </a>
         </li>
         <li class="nav-item tab-nav">
             <a class="nav-link" id="consultory-tab" data-toggle="tab" href="#consultory" role="tab" aria-controls="consultory" aria-selected="true" style="height:100%; color: black;; padding: 2hv; padding-left: 3.2rem; padding-right: 3.2rem;">
                 <img src="{{asset('images/Consultory icon.png')}}" style="height: 8rem;">
                 <br>
-                <h4>Consultoria{{__('lang.More-than')}}</h4>
+                <h4>{{__('lang.Consultory')}}</h4>
             </a>
         </li>
     </ul>
@@ -212,34 +212,34 @@
             <div class="col-md-7 col-sm-12">
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="ecosystem-generation" role="tabpanel" aria-labelledby="ecosystem-generation-tab">
-                        <h3 style="1.5rem;">Nuevas Soluciones{{__('lang.More-than')}}</h3>
+                        <h3 style="1.5rem;">{{__('lang.New-Solutions')}}</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Ayudamos en la creación de nuevos ecosistemas de negocio, en donde convergen emprendedores, empresas, inversionistas y nuevo conocimiento.{{__('lang.More-than')}}
-                            <a href="{{route('services')}}">ver más...{{__('lang.More-than')}}</a>
+                            {{__('lang.New-Solutions-text')}}
+                            <a href="{{route('services')}}">{{__('lang.See-more...')}}</a>
                         </p>
                         <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg" style="height: 15rem;" alt="Nuevos Mercados">
                     </div>
                     <div class="tab-pane fade" id="international-expantion" role="tabpanel" aria-labelledby="international-expantion-tab">
-                        <h3 style="1.5rem;">Nuevos Mercados{{__('lang.More-than')}}</h3>
+                        <h3 style="1.5rem;">{{__('lang.New-Markets')}}</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Ayudamos en el proceso de ingreso a nuevos mercados centralizados en la Alianza del Pacífico y con nuestra amplia red te conectamos con potenciales socios y clientes.{{__('lang.More-than')}}
-                            <a href="{{route('services')}}">ver más...{{__('lang.More-than')}}</a>
+                            {{__('lang.New-Markets-text')}}
+                            <a href="{{route('services')}}">{{__('lang.See-more...')}}</a>
                         </p>
                         <img src="https://images.pexels.com/photos/3769138/pexels-photo-3769138.jpeg" style="height: 15rem;" alt="Nuevos Mercados">
                     </div>
                     <div class="tab-pane fade" id="financial-search" role="tabpanel" aria-labelledby="financial-search-tab">
-                        <h3 style="1.5rem;">Nuevos Inversionistas{{__('lang.More-than')}}</h3>
+                        <h3 style="1.5rem;">{{__('lang.New-Investors')}}</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Ayudamos en la búsqueda de recursos financieros para la implementación de nuevas ideas, lo hacemos mediante el acompañamiento y asesoramiento correcto.{{__('lang.More-than')}}
-                            <a href="{{route('services')}}">ver más...{{__('lang.More-than')}}</a>
+                            {{__('lang.New-Investors-text')}}
+                            <a href="{{route('services')}}">{{__('lang.See-more...')}}</a>
                         </p>
                         <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg" style="height: 15rem;" alt="Nuevos Mercados">
                     </div>
                     <div class="tab-pane fade" id="consultory" role="tabpanel" aria-labelledby="consultory-tab">
-                        <h3 style="1.5rem;">Nuevas Experiencias{{__('lang.More-than')}}</h3>
+                        <h3 style="1.5rem;">{{__('lang.New-Experiences')}}</h3>
                         <p style="padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 15%; opacity: 0.7; line-height: 2.5rem;">
-                            Guiamos y acompañamos en el proceso de desarrollo startups, mediante asesorías de mejora estratégica, capacidad innovadora, modelo de negocio y conocimiento del mercado.{{__('lang.More-than')}}
-                            <a href="{{route('services')}}">ver más...{{__('lang.More-than')}}</a>
+                            {{__('lang.New-Experiences-text')}}
+                            <a href="{{route('services')}}">{{__('lang.See-more...')}}</a>
                         </p>
                         <img src="https://images.pexels.com/photos/2977565/pexels-photo-2977565.jpeg" style="height: 15rem;" alt="Nuevos Mercados">
                     </div>
@@ -251,9 +251,9 @@
                         <div class="card-body" style="padding: 2vh;">
                             <div class="row">
                                 <div class="col-md-5 col-sm-6">
-                                    <h4>Agendemos una{{__('lang.More-than')}}</h4>
-                                    <h4>Reunión{{__('lang.More-than')}}</h4>
-                                    <p style="padding-top: 2.5vh; opacity: 60%;"><small>Estamos disponibles para conversar{{__('lang.More-than')}}</small></p>
+                                    <h4>{{__('lang.Schedule-Meeting-1')}}</h4>
+                                    <h4>{{__('lang.Schedule-Meeting-2')}}</h4>
+                                    <p style="padding-top: 2.5vh; opacity: 60%;"><small>{{__('lang.Schedule-Meeting-text')}}</small></p>
                                 </div>
                                 <div class="col-md-3 col-sm-1">
                                     
@@ -270,9 +270,9 @@
                         <div class="card-body" style="padding: 2vh;">
                             <div class="row">
                                 <div class="col-md-5 col-sm-6">
-                                    <h4>Contáctanos{{__('lang.More-than')}}</h4>
-                                    <h4>directamente{{__('lang.More-than')}}</h4>
-                                    <p style="padding-top: 2.5vh; opacity: 60%;"><small>Estamos disponibles para conversar{{__('lang.More-than')}}</small></p>
+                                    <h4>{{__('lang.Contact-us-1')}}</h4>
+                                    <h4>{{__('lang.Contact-us-2')}}</h4>
+                                    <p style="padding-top: 2.5vh; opacity: 60%;"><small>{{__('lang.Contact-us-text')}}</small></p>
                                 </div>
                                 <div class="col-md-3 col-sm-1">
                                     
@@ -292,11 +292,11 @@
     <div>
         <div style="text-align: -webkit-center;">
             <div id="ecosystems-header">
-                <h2 style="font-size: 3rem; color: #000033;"><b>Generamos relaciones{{__('lang.More-than')}}</b></h2>
-                <h2 style="font-size: 3rem; color: #000033;"><b>entre los ecosistemas{{__('lang.More-than')}}</b></h2>
+                <h2 style="font-size: 3rem; color: #000033;"><b>{{__('lang.Generate-relations-1')}}</b></h2>
+                <h2 style="font-size: 3rem; color: #000033;"><b>{{__('lang.Generate-relations-2')}}</b></h2>
                 <br>
                 <p style="font-size: 1.5rem; color: #00000B">
-                    Sabemos que el crecimiento de un emprendimiento requiere de una innovación constante y alianzas estratégicas, por lo que creamos espacios de intercambio entre emprendedores y empresas.{{__('lang.More-than')}}
+                    {{__('lang.Generate-relations-text')}}
                 </p>
             </div>
         </div>
@@ -306,13 +306,13 @@
                     <div class="card border-0" style="height: 100%;">
                         <div class="card-body ecosystem-card" style="padding: 2.4rem;">
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
-                            <h3><b>OPORTUNIDADES{{__('lang.More-than')}}</b></h3>
+                            <h3><b>{{__('lang.OPORTUNITIES')}}</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Conoce los nuevos proyectos que están generando las empresas, busca una solución rentable y genera nuevos socios.{{__('lang.More-than')}}
+                                {{__('lang.Oportunities-text')}}
                             </p>
                             <br>
                             <br>
-                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">Leer más{{__('lang.More-than')}}</button>
+                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">{{__('lang.Read-more')}}</button>
                         </div>
                     </div>
                 </div>
@@ -322,13 +322,13 @@
                     <div class="card border-0" style="height: 100%;">
                         <div class="card-body ecosystem-card" style="padding: 2.4rem;">
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
-                            <h3><b>RETOS{{__('lang.More-than')}}</b></h3>
+                            <h3><b>{{__('lang.CHALLENGES')}}</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Conoce los nuevos desafíos que están atravesando las empresas, crea soluciones innovadoras, genera nuevos socios e impulsa tu emprendimiento.{{__('lang.More-than')}}
+                                {{__('lang.Challenges-text')}}
                             </p>
                             <br>
                             <br>
-                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">Leer más{{__('lang.More-than')}}</button>
+                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">{{__('lang.Read-more')}}</button>
                         </div>
                     </div>
                 </div>
@@ -338,13 +338,13 @@
                     <div class="card border-0" style="height: 100%;">
                         <div class="card-body ecosystem-card" style="padding: 2.4rem;">
                             <img src="{{asset('images/briefcase icon.png')}}" style="width:7.2rem; padding:1.6rem;">
-                            <h3><b>GESTIÓN DE ACUERDOS{{__('lang.More-than')}}</b></h3>
+                            <h3><b>{{__('lang.AGREEMENT-MANAGEMENT')}}</b></h3>
                             <p style="font-size: 1.25rem; padding-top: 1.6rem; line-height: 2rem;">
-                                Creamos y acompañamos nuevos acuerdos bajo los estándares legales registrados en cada país y sector.{{__('lang.More-than')}}
+                                {{__('lang.Agreement-management-text')}}
                             </p>
                             <br>
                             <br>
-                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">Leer más{{__('lang.More-than')}}</button>
+                            <button type="button" class="btn btn-outline-primary" style="height:3.25rem; width:8rem; font-size: 1.15rem;">{{__('lang.Read-more')}}</button>
                         </div>
                     </div>
                 </div>
@@ -353,11 +353,11 @@
     </div>
     <!-- Specialists -->
     <div style="padding-top: 4rem; padding-bottom: 4rem;">
-        <p style="opacity: 0.3; font-size: 2.25rem;"><b>¿Cómo lo hacemos?{{__('lang.More-than')}}</b></p>
-        <h2 style="font-size: 3.5rem;">Nuestros especialistas a tu lado{{__('lang.More-than')}}</h2>
+        <p style="opacity: 0.3; font-size: 2.25rem;"><b>{{__('lang.How-we-do-it?')}}</b></p>
+        <h2 style="font-size: 3.5rem;">{{__('lang.Our-specialists')}}</h2>
         <div style="width: 25%; background-color: #31388E; height: 0.75rem;"></div>
         <p style="width: 70%; font-size: 1.25rem; padding-top: 2rem;">
-            Somos un equipo con experiencia y amante de la innovación.{{__('lang.More-than')}}
+            {{__('lang.Our-specialists-text')}}
         </p>
         <div>
             <div class="row" style="padding-top: 4rem;">
@@ -369,14 +369,14 @@
                             <br>
                             <div class="specialist-card-body">
                                 <div style="width: 80%; background-color: #31388E; height: 0.4rem;"></div>
-                                <h5 style="font-size: 2rem; margin-top: 1rem;">Javier Benavides{{__('lang.More-than')}}</h5>
-                                <p style="font-size: 1.25rem;">Experto en finanzas y su vinculación con la innovación y el emprendimiento{{__('lang.More-than')}}</p>
-                                <p style="font-size: 1.25rem;">Fundador de redes de ángeles y diseñador de fondos de inversión{{__('lang.More-than')}}</p>
-                                <p style="font-size: 1.25rem;">Director Perú de Inversionistas AP, gremio de venture capital apoyado por el Banco Interamericano de Desarrollo{{__('lang.More-than')}}</p>
+                                <h5 style="font-size: 2rem; margin-top: 1rem;">Javier Benavides</h5>
+                                <p style="font-size: 1.25rem;">{{__('lang.Javier-Benavides-1')}}</p>
+                                <p style="font-size: 1.25rem;">{{__('lang.Javier-Benavides-2')}}</p>
+                                <p style="font-size: 1.25rem;">{{__('lang.Javier-Benavides-3')}}</p>
                                 <p style="font-size: 1.25rem;">
-                                    MBA del IE Business School.{{__('lang.More-than')}}
+                                    {{__('lang.Javier-Benavides-4')}}
                                     <br>
-                                    Docente de postgrado en políticas públicas de innovación, finanzas e innovación empresarial{{__('lang.More-than')}}
+                                    {{__('lang.Javier-Benavides-5')}}
                                     <br>
                                     <a class="link-dark" href="https://www.linkedin.com/in/benavidesjavier/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>
@@ -392,13 +392,13 @@
                             <br>
                             <div class="specialist-card-body">
                                 <div style="width: 80%; background-color: #31388E; height: 0.4rem;"></div>
-                                <h5 style="font-size: 2rem; margin-top: 1rem;">Luis Salazar{{__('lang.More-than')}}</h5>
-                                <p style="font-size: 1.25rem;">Emprendedor, socio fundador de Investa VB{{__('lang.More-than')}}</p>
-                                <p style="font-size: 1.25rem;">Apasionado por la innovación abierta, con especial interés en tecnologías{{__('lang.More-than')}}</p>
+                                <h5 style="font-size: 2rem; margin-top: 1rem;">Luis Salazar</h5>
+                                <p style="font-size: 1.25rem;">{{__('lang.Luis-Salazar-1')}}</p>
+                                <p style="font-size: 1.25rem;">{{__('lang.Luis-Salazar-2')}}</p>
                                 <p style="font-size: 1.25rem;">
-                                    MBA por el Instituto de Empresa.{{__('lang.More-than')}}
+                                    {{__('lang.Luis-Salazar-3')}}
                                     <br>
-                                    Especializado en modelos de negocio, estrategia e innovación. Docente de pre y post grado en emprendimiento e innovación. Speaker internacional en diversos eventos de innovación, startups y emprendimiento.{{__('lang.More-than')}}
+                                    {{__('lang.Luis-Salazar-4')}}
                                     <br>
                                     <a class="link-dark" href="https://www.linkedin.com/in/salazarluis/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>
@@ -414,14 +414,14 @@
                             <br>
                             <div class="specialist-card-body">
                                 <div style="width: 80%; background-color: #31388E; height: 0.4rem;"></div>
-                                <h5 style="font-size: 2rem; margin-top: 1rem;">Alejandro Bernaola{{__('lang.More-than')}}</h5>
-                                <p style="font-size: 1.25rem;">Experto en promoción de la Ciencia, Tecnología, Innovación y Emprendimiento desde los espacios público, privado y multilateral{{__('lang.More-than')}}</p>
-                                <p style="font-size: 1.25rem;">Impulsor de ecosistemas regionales de innovación con enfoque en desarrollo productivo y territorial{{__('lang.More-than')}}</p>
-                                <p style="font-size: 1.25rem;">Gerente de Alianzas en ACM Ventures, aceleradora agtech{{__('lang.More-than')}}</p>
+                                <h5 style="font-size: 2rem; margin-top: 1rem;">Alejandro Bernaola</h5>
+                                <p style="font-size: 1.25rem;">{{__('lang.Alejandro-Bernaola-1')}}</p>
+                                <p style="font-size: 1.25rem;">{{__('lang.Alejandro-Bernaola-2')}}</p>
+                                <p style="font-size: 1.25rem;">{{__('lang.Alejandro-Bernaola-3')}}</p>
                                 <p style="font-size: 1.25rem;">
-                                    Ex Director General de Innovación en Produce.{{__('lang.More-than')}}
+                                    {{__('lang.Alejandro-Bernaola-4')}}
                                     <br>
-                                    Ponente en temas de Innovación y agtech en distintos eventos nacionales e internacionales.{{__('lang.More-than')}}
+                                    {{__('lang.Alejandro-Bernaola-5')}}
                                     <br>
                                     <a class="link-dark" href="https://www.linkedin.com/in/alejandrobernaola/" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
                                 </p>

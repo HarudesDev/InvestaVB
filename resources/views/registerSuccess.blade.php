@@ -67,23 +67,23 @@
 <body>
     <div id="message-container">
         <h1>
-            <b>¡Felicitaciones!</b>
+            <b>{{__('lang.Congratulations!')}}</b>
         </h1>
         <br>
         <br>
         <p>
-            Felicidades, te has registrado
+            {{__('lang.Congratulations,-you-have-registered')}}
         </p>
         <p>
-            <b>Recibirás un correo con la información para validar tu registro en nuestra plataforma</b>
+            <b>{{__('lang.Congratulations-body')}}</b>
         </p>
         <br>
         <p>
-            Bienvenido(a)
+            {{__('lang.Welcome')}}
         </p>
         <br>
         <a id="backBtn" class="btn btn-primary" href="{{route('marketplace')}}">
-            Regresar
+            {{__('lang.Back')}}
         </a>
     </div>
 </body>

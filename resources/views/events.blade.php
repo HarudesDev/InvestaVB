@@ -43,9 +43,9 @@
             <img class="title-image" id="events-img" src="{{asset('images/Events.jpg')}}" style="max-width:100%;">
         </div>
         <div class="col-md-6 col-sm-12 order-md-1">
-            <h1 style="font-size: 3.25rem; padding-top: 5vh;">Eventos</h1>
+            <h1 style="font-size: 3.25rem; padding-top: 5vh;">{{__('lang.Events')}}</h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Si eres un emprendedor, este es tu espacio de eventos de nuevas tecnologías. 
+                {{__('lang.Events-header')}}
             </p>
         </div>
     </div>
@@ -53,12 +53,12 @@
     <!-- Event List -->
     <div id="event-list-container">
         <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-            <b>Conoce la programación:</b>
+            <b>{{__('lang.Know the programming:')}}</b>
         </p>
         <div class="row" style="font-size: 1.6rem;">
             <div class="col">
                 <a class="nav-link dropdown-toggle d-table-cell align-middle link-dark" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                    A PARTIR DE AHORA
+                    {{__('lang.FROM-NOW-ON')}}
                 </a>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"> </a></li>
@@ -70,7 +70,7 @@
             </div>
         </div>
         <br>
-        <h3><b> Últimos Eventos Pasados </b></h3>
+        <h3><b> {{__('lang.Latest-Past-Events')}} </b></h3>
         <br>
         <br>
         <div class="row">

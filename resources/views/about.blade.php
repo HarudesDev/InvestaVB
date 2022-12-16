@@ -98,18 +98,18 @@
             </div>
         </div>
         <div class="col-md-6 col-sm-12 order-md-1">
-            <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>¿Quienes Somos?</b></h1>
+            <h1 style="font-size: 3.25rem; padding-top: 5vh;"><b>{{__('lang.About-us-title')}}</b></h1>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Somos una compañía con experiencia en el ecosistema emprendedor.
+                {{__('lang.About-us-text-1')}}
             </p>
             <p style="padding-top: 1vh; padding-bottom: 3vh; font-size: 1.4rem;">
-                Impulsamos el crecimiento de emprendedores dedicados a la creación de nuevas tecnologías, mediante la generación de alianzas con empresas innovadoras, asesorías, internacionalización y exploración de financiamiento.
+                {{__('lang.About-us-text-2')}}
             </p>
         </div>
     </div>
 
-    <h2><b>Nuestros Aliados</b></h2>
-    <p class="text-center" style="font-size: 1.6rem;"><b>Redes de Inversionistas, Aceleradoras y Concursos Mundiales</b></p>
+    <h2><b>{{__('lang.Our-allies')}}</b></h2>
+    <p class="text-center" style="font-size: 1.6rem;"><b>{{__('lang.Carousel-header')}}</b></p>
     <br>
     <br>
     <!--
