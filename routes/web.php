@@ -43,3 +43,5 @@ Route::post('/registrar/emprendedor','UserController@storeEntrepreneur')->name('
 
 Route::get('/registrar/inversionista','UserController@registerPortfolio')->name('user.portfolio.register');
 Route::post('/registrar/inversionista','UserController@storePortfolio')->name('user.portfolio.store');
+
+Route::get('/retos', 'ChallengeController@index')->name('challenges.index');

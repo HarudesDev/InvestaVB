@@ -159,17 +159,19 @@
         <div class="row" style="padding-bottom: 6rem;">
             <div class="col-md-2 col-sm-12"></div>
             <div class="col-md-2 col-sm-12">
-                <div class="container">
-                    <img class="marketplace-img image" src="{{asset('images/Retos.jpg')}}" alt="Retos">
-                    <div class="overlay">
-                        <div class="overlay-text">
-                            <br>
-                            <div style="text-align:left;">
-                                {{__('lang.Challenges-text')}}
+                <a href="{{route('challenges.index')}}">
+                    <div class="container">
+                        <img class="marketplace-img image" src="{{asset('images/Retos.jpg')}}" alt="Retos">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                                <br>
+                                <div style="text-align:left;">
+                                    {{__('lang.Challenges-text')}}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
                 <h4 style="padding-top: 1.6rem;">{{__('lang.Challenges')}}</h4>
             </div>
             <div class="col-md-2 col-sm-12">
